@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -29,37 +28,34 @@ function Navbar() {
         <div className="navbar-container">
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <a className="nav-links" onClick={closeMobileMenu}>
                 Đăng ký
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
-                to="/aboutus"
+              <a
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 CLB F-Code
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
-                to="/challenges"
+              <a
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Thử thách
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/contact"
+              <a
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Liên hệ
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
