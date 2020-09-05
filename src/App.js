@@ -5,9 +5,11 @@ import './App.css';
 
 const App = () => (
   <div>
-  <Navbar/>
-  <Signup/>
+    <Navbar className="navbar"/>
+    <Signup className="signup"/>
   </div>
+  
+  
 
 );
 
