@@ -22,7 +22,7 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
 
-          <div className="footer-link-items">
+          <div className="contact">
             <h2>Liên hệ</h2>
             <Link to="/">f-code/fb</Link>
             <Link to="/">Our website</Link>
@@ -30,10 +30,13 @@ function Footer() {
         </div>
         <div className="footer-link-wrapper">
 
-          <div className="footer-link-items">
+          <div className="social-icons">
             <h2>Social Media</h2>
-            <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link"><FaFacebook /></Link>
-            <Link to="//www.youtube.com/channel/UCZyrUXSrQ1AdkomxYz1GvCw" target="_blank" className="social-icon-link"><FaYoutube /></Link>
+            <div className="icons-wrapper">
+              <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link"><FaFacebook /></Link>
+              <Link to="//www.youtube.com/channel/UCZyrUXSrQ1AdkomxYz1GvCw" target="_blank" className="social-icon-link"><FaYoutube /></Link>
+            </div>
+            
           </div>
         </div>
       </div>
