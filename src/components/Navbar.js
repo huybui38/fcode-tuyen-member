@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { MdAndroid } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Button from './Button';
+import logo from './logo.png';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -30,8 +31,9 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar-container container">
-          <Link to="/" className="navbar-logo">
-            <MdAndroid className="navbar-icon" />
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            {/* <MdAndroid className="navbar-icon" /> */}
+            <img src={logo} alt="logo" className="logo-img" />
             F-CODE
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -40,19 +42,19 @@ function Navbar() {
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <Link to="/" className="nav-links">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/services" className="nav-links">
-                Services
+              <Link to="/timeline" className="nav-links" onClick={closeMobileMenu}>
+                Timeline
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/products" className="nav-links">
+              <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
                 Products
               </Link>
             </li>
@@ -60,7 +62,7 @@ function Navbar() {
             <li className="nav-btn">
               {button ? (
                 <Link to="/sign-up" className="btn-link">
-                  <Button buttonStyle="btn--outline">SIGN UP</Button>
+                  <Button buttonStyle="btn--outline">ĐĂNG KÝ</Button>
                 </Link>
               ) : (
                 <Link to="/sign-up" className="btn-link">
@@ -69,7 +71,7 @@ function Navbar() {
                     buttonSize="btn--mobile"
                     onClick={closeMobileMenu}
                   >
-                    SIGN UP
+                    ĐĂNG KÝ
                   </Button>
                 </Link>
               )}
