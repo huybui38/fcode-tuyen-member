@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Signup.css';
-import logo from './logo.png';
+import logo from '../logo.png';
 
 const Signup = () => (
   <div className="wrapper">

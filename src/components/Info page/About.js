@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import './About.css';
 import { ArrowRightOutlined } from '@ant-design/icons';
+import Carousel from 'react-elastic-carousel';
+import styled from 'styled-components';
+import Card from './Card';
+import logo from '../logo.png';
 
 const About = () => (
+
   <div className="about-wrapper">
+    <img src={logo} alt="logo" className="logo" />
     <h1 className="title">CLB F-Code</h1>
     <div className="paragraph-wrapper">
       <p className="intro-paragraph">
@@ -15,6 +21,13 @@ const About = () => (
       </div>
     </div>
 
+    <Carousel>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+
+    </Carousel>
   </div>
 );
 
