@@ -12,7 +12,7 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Tham gia CLB F-Code để có thêm nhiều bạn bè, cùng nhau học tập, vui chơi.
+          Tham gia CLB F-Code để có thêm nhiều bạn bè, cùng nhau học tập và vui chơi.
         </p>
         <p className="footer-subscription-text">
           Nếu có thắc mắc, các bạn có thể liên hệ với chúng mình qua link bên dưới.
