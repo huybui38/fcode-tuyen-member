@@ -12,7 +12,6 @@ const App = () => (
 
     <Switch>
       <Route path="/" exact component={About} />
-
     </Switch>
     <Footer />
   </Router>
