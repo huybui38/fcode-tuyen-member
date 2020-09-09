@@ -18,7 +18,7 @@ function HeroSection({
       <div
         className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
       >
-        <div className="container">
+        <div className="about-container">
           <div
             className="row home__hero-row"
             style={{
@@ -50,7 +50,7 @@ function HeroSection({
             </div>
             <div className="col">
               <div className="home__hero-img-wrapper">
-                <Slider slides={images} autoPlay={2} className="slider" />
+                <Slider slides={images} className="slider" />
               </div>
             </div>
           </div>

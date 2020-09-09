@@ -40,9 +40,8 @@ function Footer() {
         </div>
       </div>
 
-      <div>
-        <div className="website-rights">F-CODE © 2020</div>
-      </div>
+      <div className="website-rights">F-CODE © 2020</div>
+      
 
     </div>
   );
