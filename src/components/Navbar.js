@@ -32,7 +32,6 @@ function Navbar() {
       <div className="navbar">
         <div className="navbar-container container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            {/* <MdAndroid className="navbar-icon" /> */}
             <img src={logo} alt="logo" className="logo-img" />
             F-CODE
           </Link>
@@ -54,8 +53,8 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
-                Products
+              <Link to="/Q&A" className="nav-links" onClick={closeMobileMenu}>
+                Q&A
               </Link>
             </li>
 

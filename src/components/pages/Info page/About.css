@@ -1,54 +1,12 @@
-.about-wrapper{
-    background-size: cover;
+.about-page-wrapper {
     display: flex;
-    position: relative;
-    flex-direction: column;
-    height: 97vh;
-    width: 100%;
-    overflow-y: hidden;  
+    flex-direction: row;
 }
-
-.title {
-    text-align: center;
-    margin-bottom: 2vh;
-    font-family: sans-serif;
-    position: relative;
-}
-
-.paragraph-wrapper {
-    width: 75%;
-    align-self: center;
-    position: relative;
-}
-
-.intro-paragraph {
-    font-family: sans-serif;
-    color: #777;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-}
-
-.link-visit {
-    cursor: pointer;
-    display: inline-flex;
-    transition: 50ms;
-}
-
-.link-visit:hover {
-    border-bottom: 1px solid #5a73fc;
-    transform: scale(1.1);
-}
-
-.text-link {
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    margin-right: 0.3rem;
-    color: #5a73fc;
+.slider {
     display: flex;
+    width: 50%;
+    float: left;
 }
 
-.arrow {
-    color: #5a73fc;
-    display: flex;
-}
+
   

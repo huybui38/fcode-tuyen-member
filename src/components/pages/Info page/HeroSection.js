@@ -1,7 +1,9 @@
 import React from 'react';
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
-import Button from './Button';
+import { FaArrowRight } from 'react-icons/fa';
+import Slider from './Slider';
+import images from './images';
 
 function HeroSection({
   lightBg,
@@ -10,10 +12,6 @@ function HeroSection({
   lightTextDesc,
   headline,
   description,
-  buttonLabel,
-  img,
-  alt,
-  imgStart,
 }) {
   return (
     <>
@@ -25,7 +23,7 @@ function HeroSection({
             className="row home__hero-row"
             style={{
               display: 'flex',
-              flexDirection: imgStart === 'start' ? 'row-reverse' : 'row',
+
             }}
           >
             <div className="col">
@@ -43,11 +41,16 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to="/sign-up">
-                  <Button buttonSize="btn--wide" buttonColor="blue">
-                    {buttonLabel}
-                  </Button>
-                </Link>
+                <div className="visit-link">
+                  <span className="visit-text">Xem thêm</span>
+                  <span className="link-arrow"><FaArrowRight /></span>
+                </div>
+
+              </div>
+            </div>
+            <div className="col">
+              <div className="home__hero-img-wrapper">
+                <Slider slides={images} autoPlay={5} className="slider" />
               </div>
             </div>
           </div>

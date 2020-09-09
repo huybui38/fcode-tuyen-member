@@ -1,8 +1,7 @@
 /** @jsx jsx */
-import React from 'react'
-import { css, jsx } from '@emotion/core'
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import rightArrow from '../img/right-arrow.svg'
+import React from 'react';
+import { css, jsx } from '@emotion/core';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 
 const Arrow = ({ direction, handleClick }) => (
   <div
@@ -11,28 +10,29 @@ const Arrow = ({ direction, handleClick }) => (
       display: flex;
       position: absolute;
       top: 50%;
-      ${direction === 'right' ? `right: 25px` : `left: 25px`};
-      height: 50px;
-      width: 50px;
+      ${direction === 'right' ? 'right: 25px' : 'left: 25px'};
       justify-content: center;
-      background: white;
-      border-radius: 50%;
       cursor: pointer;
       align-items: center;
       transition: transform ease-in 0.1s;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.4);
+        
       }
-      img {
+
+      .arrow {
         transform: translateX(${direction === 'left' ? '-2' : '2'}px);
+
         &:focus {
           outline: 0;
         }
+        font-size: 50px;
+        color: rgba(0,0,0,0.6);
       }
     `}
   >
-    {direction === 'right' ? <FaArrowRight/> : < FaArrowLeft />}
+    {direction === 'right' ? <FaAngleRight className="arrow" /> : <FaAngleLeft className="arrow" />}
   </div>
-)
+);
 
-export default Arrow
+export default Arrow;

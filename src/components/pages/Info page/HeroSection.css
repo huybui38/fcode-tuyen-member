@@ -1,6 +1,5 @@
 .home__hero-section {
-    color: #fff;
-    padding: 160px 0;
+    padding: 120px 0;
   }
   
   .home__hero-row {
@@ -21,14 +20,15 @@
     padding-right: 15px;
     padding-left: 15px;
     flex: 1;
-    max-width: 50%;
+    max-width: 40%;
     flex-basis: 50%;
   }
   
   .home__hero-text-wrapper {
-    max-width: 540px;
+    max-width: 360px;
     padding-top: 0;
     padding-bottom: 60px;
+    
   }
   
   .top-line {
@@ -59,7 +59,7 @@
   
   .home__hero-subtitle {
     max-width: 440px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -69,19 +69,37 @@
   }
   
   .home__hero-img {
-    max-width: 95%;
+    max-width: 100%;
     margin-top: 0;
     margin-right: 0;
     margin-left: 10px;
     padding-right: 0;
   }
   
-  img {
-    border: 0;
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
+  .visit-link {
+    color: #5a73fc;
+    cursor: pointer;
+    display: inline-block; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    
   }
+
+  .visit-link:hover {
+    text-decoration: underline;
+  }
+
+  .visit-text {
+    font-size: 20px;
+    padding-right: 3px;
+    
+  }
+
+  .link-arrow {
+    font-size: 15px;
+  }
+
+
   
   @media screen and (max-width: 991px) {
     .container {
