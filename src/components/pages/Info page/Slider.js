@@ -134,6 +134,7 @@ const SliderCSS = css`
   width: 50vw;
   overflow: hidden;
   white-space: nowrap;
+  border: 2px inset black;
 `;
 
 export default Slider;

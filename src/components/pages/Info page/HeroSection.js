@@ -50,7 +50,7 @@ function HeroSection({
             </div>
             <div className="col">
               <div className="home__hero-img-wrapper">
-                <Slider slides={images} autoPlay={5} className="slider" />
+                <Slider slides={images} autoPlay={2} className="slider" />
               </div>
             </div>
           </div>
