@@ -21,7 +21,6 @@ function Footer() {
 
       <div className="footer-links">
         <div className="footer-link-wrapper">
-
           <div className="contact">
             <h2>Liên hệ</h2>
             <Link to="/">Facebook</Link>
@@ -29,19 +28,14 @@ function Footer() {
           </div>
         </div>
         <div className="footer-link-wrapper">
-
-          <div className="social-media">
-            <h2>Social Media</h2>
-            <div className="icons-wrapper">
-              <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link fb-icon"><FaFacebook /></Link>
-              <Link to="//www.youtube.com/channel/UCZyrUXSrQ1AdkomxYz1GvCw" target="_blank" className="social-icon-link"><FaYoutube /></Link>
-            </div>
+          <div className="icons-wrapper">
+            <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link fb-icon"><FaFacebook /></Link>
+            <Link to="//www.youtube.com/channel/UCZyrUXSrQ1AdkomxYz1GvCw" target="_blank" className="social-icon-link"><FaYoutube /></Link>
           </div>
         </div>
       </div>
 
       <div className="website-rights">F-CODE © 2020</div>
-      
 
     </div>
   );

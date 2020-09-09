@@ -80,20 +80,15 @@
 /* Social Icons */
 .icons-wrapper {
   flex-direction: row;
-  margin-top: -100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-icon-link {
   color: #fff;
   font-size: 40px;
   transition: 50ms ease-in;
-}
-
-.social-media {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 240px;
 }
 
 .social-icon-link:hover {
@@ -114,25 +109,74 @@
   margin: 25px auto 0px auto;
 }
 
+/*------------ EXTRA SMALL DEVICES ---------*/
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    padding: 20px 10px 20px 10px;
+    height: auto;
+  }
 
-@media screen and (max-width: 820px) {
+  .footer-subscription {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+
+  .footer-subscription-heading {
+    font-size: 15px;
+  }
+
+  .footer-subscription-text {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
   .footer-links {
-    padding-top: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .footer-input {
-    width: 100%;
+  .contact {
+    width: 90px;
+    padding-right: 30px;
+    margin-bottom: 0px;
   }
 
-  .btn {
-    width: 100%;
+  .contact a {
+    font-size: 10px;
   }
 
-  .footer-link-wrapper {
-    flex-direction: column;
+  .contact h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
   }
 
-  .social-media-wrap {
-    flex-direction: column;
+  .social-icon-link {
+    font-size: 22px;
+  }
+
+  .website-rights {
+    font-size: 15px;
   }
 }
+
+/*------------ MEDIUM DEVICES ------------*/
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    padding-top: 20px;
+  }
+
+  .footer-subscription {
+    margin-bottom: 0px;
+  }
+
+  .social-icon-link {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+}
+
+  
+
+
+
