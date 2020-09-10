@@ -57,6 +57,7 @@
     margin-bottom: 20px;
     font-size: 5rem;
     line-height: 24px;
+    color: #777;
   }
   
   .home__hero-img-wrapper {
@@ -252,7 +253,7 @@
       max-width: 500px;
       margin-bottom: 20px;
       font-size: 1.4rem;
-      line-height: 26px;
+      line-height: 28px;
     }
 
     .home__hero-text-wrapper {

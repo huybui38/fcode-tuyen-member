@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/pages/Homepage/Home';
 import About from './components/pages/Info page/About';
+import Card from './components/pages/RequirePage/Card';
 import './App.css';
 
 const App = () => (
@@ -11,7 +12,7 @@ const App = () => (
     <Navbar />
 
     <Switch>
-      <Route path="/" exact component={About} />
+      <Route path="/" exact component={Card} />
     </Switch>
     <Footer />
   </Router>
