@@ -135,6 +135,16 @@ const SliderCSS = css`
   overflow: hidden;
   white-space: nowrap;
   border: 2px inset black;
+
+  @media only screen and (max-width: 600px) {
+    height: 45vh;
+    width: 85vw;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 85vw; 
+    margin-left: -20px
+  }
 `;
 
 export default Slider;

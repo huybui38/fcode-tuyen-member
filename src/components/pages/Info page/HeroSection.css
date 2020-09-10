@@ -22,6 +22,7 @@
     flex: 1;
     max-width: 40%;
     flex-basis: 50%;
+    display: flex;
   }
   
   .home__hero-text-wrapper {
@@ -54,7 +55,7 @@
   .home__hero-subtitle {
     max-width: 440px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 5rem;
     line-height: 24px;
   }
   
@@ -94,16 +95,28 @@
 
   /*------------- EXTRA SMALL DEVICES -------------*/
   @media only screen and (max-width: 600px) {
+    .home__hero-section {
+      margin-left: 20px;
+    }
+    
     .row {
       display: flex;
       flex-direction: column;
       align-content:  center;
-      margin-left: -100px;
+      margin-left: -50px;
       margin-right: 100px;
+    }
+    
+    .col {
+      display: flex;
+      max-width: 70%;
+      flex-basis: 100%;
+      flex: 1;
     }
 
     .home__hero-text-wrapper {
-      width: 90vw;
+      max-width: 1000px;
+      width: 500px;
       padding-top: 0;
       margin-bottom: 0px;
       padding-bottom: 30px;
@@ -111,7 +124,7 @@
 
     .home__hero-subtitle {
       max-width: 500vw;
-      
+      width: 85vw;
       margin-bottom: 15px;
       font-size: 15px;
       line-height: 24px;
@@ -124,12 +137,19 @@
     .heading {
       width: 100%;
       margin-bottom: 20px;
-      padding-left: 30px;
-      font-size: 36px;
+      padding-left: 4vh;
+      font-size: 2rem;
       font-weight: 600;    
       cursor: default;
       transition: 50ms;
       justify-self: center;
+    }
+
+    .home__hero-img-wrapper {
+      max-width: 100%;
+      margin-top: 0;
+      align-self: center;
+      padding-right: 0;
     }
   }
 
@@ -158,19 +178,30 @@
       max-width: 550px;
       width: 100vw;
       margin-bottom: 15px;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 1.9rem;
+      line-height: 5vh;
     }
 
     .heading {
-      width: 100%;
+      width: 120%;
       margin-bottom: 20px;
-      padding-left: 30px;
+      padding-left: 15vw;
       font-size: 48px;
       font-weight: 600;    
       cursor: default;
       transition: 50ms;
       justify-self: center;
+    }
+
+    .home__hero-img-wrapper {
+      max-width: 100%;
+      margin-top: 0;
+      margin-left: -60px;
+      padding-right: 0;
+    }
+
+    .visit-text {
+      font-size: 26px;
     }
 
   }
@@ -197,21 +228,18 @@
       max-width: 360px;
       width: 100vw;
       margin-bottom: 15px;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 5vh;
     }
 
     .visit-text {
       font-size: 25px;
     }
-
-
-
   }
   /*-----------------------------------------------*/
 
 
-  /*----------------- EXTRA LARGE SCREEN ONLY --------------*/
+  /* ----------------- EXTRA LARGE SCREEN ONLY --------------*/
   @media screen and (min-width: 1200px) {
     .about-container {
       padding-right: 20px;
@@ -224,7 +252,7 @@
       max-width: 500px;
       margin-bottom: 20px;
       font-size: 1.4rem;
-      line-height: 24px;
+      line-height: 26px;
     }
 
     .home__hero-text-wrapper {
@@ -233,7 +261,7 @@
       padding-bottom: 60px;
     }
   }
-  /*-------------------------------------*/
+  /*------------------------------------- */
 
   
   
