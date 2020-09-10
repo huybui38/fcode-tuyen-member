@@ -24,7 +24,7 @@ function Footer() {
           <div className="contact">
             <h2>Liên hệ</h2>
             <Link to="/">Facebook</Link>
-            <Link to="/">Our website</Link>
+            <Link to="/">Website</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
