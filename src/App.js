@@ -5,16 +5,17 @@ import Footer from './components/Footer';
 import Home from './components/pages/Homepage/Home';
 import About from './components/pages/Info page/About';
 import Card from './components/pages/RequirePage/Card';
+import Challenge from './components/pages/Challengepage/Challenge';
 import './App.css';
 
 const App = () => (
   <Router>
     <Navbar />
-
-    <Switch>
+    <Challenge />
+    {/* <Switch>
       <Route path="/" exact component={Card} />
     </Switch>
-    <Footer />
+    <Footer /> */}
   </Router>
 
 );

@@ -21,6 +21,7 @@ function Pricing() {
                 <p>Nhiệt huyết, cống hiến hết mình vì CLB</p>
               </div>
             </div>
+
             <div className="require__container-card">
               <div className="require__container-cardInfo">
                 <div className="icon">
@@ -30,6 +31,7 @@ function Pricing() {
                 <p>Có tinh thần học hỏi, sẵn sàng chia sẻ kiến thức với mọi người</p>
               </div>
             </div>
+
             <div className="require__container-card">
               <div className="require__container-cardInfo">
                 <div className="icon">
@@ -39,6 +41,7 @@ function Pricing() {
                 <p>Tôn trọng các anh chị khóa trên</p>
               </div>
             </div>
+
             <div className="require__container-card">
               <div className="require__container-cardInfo">
                 <div className="icon">
@@ -48,6 +51,7 @@ function Pricing() {
                 <p>Trách nhiệm, dám thử thách bản thân, kiên trì không dễ dàng bỏ cuộc.</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
