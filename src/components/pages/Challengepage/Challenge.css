@@ -1,14 +1,14 @@
-.challenge__section
- {
-    padding: 100px 0 160px;
+.challenge__section {
+    padding: 60px 0 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: #fafafa;
-  }
+}
   
   .challenge__container-card {
-    background: linear-gradient(45deg, #0660e9 0%, #276afb 100%);
+    /* background: linear-gradient(45deg, #0660e9 0%, #276afb 100%); */
+    background: #fafafa;
     box-shadow: 0 20px 20px rgba(56, 125, 255, 0.2);
     width: 280px;
     height: 300px;
@@ -19,7 +19,7 @@
 
   .challenge__container-card.active {
     left: 0;
-    height: 65vh;
+    height: 75vh;
     transition: all 0.6s step-end;
     z-index: 1;
   }
@@ -63,67 +63,90 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 24px;
+    padding: 0px;
     align-items: center;
-    color: #fff;
+    color: #000;
   }
 
-  /* .challenge__container-cardInfo.active {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 24px;
-    align-items: flex-start;
-    color: #fff;
-  } */
   
-  .challenge__container-cardInfo h3 {
+  /*---------- CARD HEADER ---------*/
+  .challenge-icon {
+    font-size: 64px;
+  }
+
+  .challenge-card-header {
+    /* margin: 22px 0; */
+    background: red;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .challenge-card-header h3 {
+    font-size: 24px;
+    cursor: default;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+  }
+  /*------------------------------*/
+
+  /*--------- CARD BODY --------------*/
+  .cardInfo-detail {
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    background: #fafafa;
+  }
+  
+  .cardInfo-detail p {
+    font-size: 24px;
     margin-bottom: 20px;
-    font-size: 24px;
     cursor: default;
   }
-  
-  .challenge__container-cardInfo p {
-    font-size: 24px;
-    margin-bottom: 24px;
-    cursor: default;
-    
-  }
-  
-  .icon {
-    margin: 22px 0;
+
+  .time-heading, .time-number {
+    font-size: 22px;
   }
 
+  .progress-status{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .progress-status-icon {
+    color: #52c41a;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .progress-waiting-icon {
+    margin-right: 10px;
+  }
+
+  .progress-status-text {
+    font-size: 18px;
+  }
+
+  /*----------------------------------*/
   
-
-  .viewmore-text {
-    text-decoration: underline;
-    font-size: 15px;
-    cursor: pointer;
-} 
-  .collapsed {
-    display: flex;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 22px;
-    position: absolute;
-    bottom: 10px;  
-  }  
-
-  .expanded {
-    display: flex;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 22px;
-    position: absolute;
-    bottom: 10px;
-  }  
-
   .toggle-arrow {
-    margin-top: 6px;
+    align-items: center;
+    align-self: center;
     display: flex;
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+  }
+
+  .toggle-arrow.invalid-toggle {
+    cursor: default;
   }
 
   /*-------------------------------------------------------*/
