@@ -10,7 +10,7 @@ function Pricing() {
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
       <div className="require__section">
         <div className="require__wrapper">
-          <h1 className="require__heading">Tiêu chí</h1>
+          <h1 className="require__heading">Tinh thần F-Code</h1>
           <div className="require__container">
             <div className="require__container-card">
               <div className="require__container-cardInfo">

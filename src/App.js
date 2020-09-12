@@ -10,8 +10,10 @@ import './App.css';
 
 const App = () => (
   <Router>
-    <Navbar />
+
     <Challenge />
+    <Footer />
+
     {/* <Switch>
       <Route path="/" exact component={Card} />
     </Switch>

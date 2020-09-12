@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './Challenge.css';
-import { FaFire, FaHandshake } from 'react-icons/fa';
-import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { GiWeightLiftingUp, GiFlyingFlag } from 'react-icons/gi';
+import { AiOutlineCheckCircle, AiOutlineFileSearch } from 'react-icons/ai';
 import { RiArrowDropDownFill, RiArrowDropUpFill } from 'react-icons/ri';
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
+// import {
+//   CollapsibleComponent,
+//   CollapsibleHead,
+//   CollapsibleContent,
+// } from 'react-collapsible-component';
+import Collapsible from 'react-collapsible';
+import Button from './ButtonC';
 
 function Challenge() {
   const [click, setClick] = useState(false);
@@ -17,9 +24,9 @@ function Challenge() {
         <h1 className="challenge__heading">Giai đoạn tuyển chọn</h1>
         <div className="challenge__container">
           <div className={click ? 'challenge__container-card active' : 'challenge__container-card'}>
-            <div className={click ? 'challenge__container-cardInfo active' : 'challenge__container-cardInfo'}>
-              <div className="challenge-card-header">
-                <FaFire className="challenge-icon" />
+            <div className="challenge__container-cardInfo">
+              <div className="challenge-card-header header1">
+                <AiOutlineFileSearch className="challenge-icon" />
                 <h3>Giai đoạn 1</h3>
               </div>
               <div className="cardInfo-detail">
@@ -34,14 +41,24 @@ function Challenge() {
                 </div>
               </div>
 
-              {click ? <RiArrowDropUpFill className="toggle-arrow" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow" onClick={handleClick} />}
+              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick} />}>
+                <p className="expanded-text">Bạn nào chưa đăng ký tham gia thì hãy ấn ngay nút "Đăng ký" bên dưới ngay nhé! </p>
+                <Button
+                  buttonStyle="btn--primary"
+                  buttonSize="btn--mobile"
+                  buttonColor="red"
+                >
+                  ĐĂNG KÝ
+                </Button>
+              </Collapsible>
+
             </div>
           </div>
 
           <div className="challenge__container-card">
             <div className="challenge__container-cardInfo">
-              <div className="challenge-card-header">
-                <FaFire className="challenge-icon" />
+              <div className="challenge-card-header header2">
+                <GiWeightLiftingUp className="challenge-icon" />
                 <h3>Giai đoạn 2</h3>
               </div>
               <div className="cardInfo-detail">
@@ -61,8 +78,8 @@ function Challenge() {
 
           <div className="challenge__container-card">
             <div className="challenge__container-cardInfo">
-              <div className="challenge-card-header">
-                <FaFire className="challenge-icon" />
+              <div className="challenge-card-header header3">
+                <GiFlyingFlag className="challenge-icon" />
                 <h3>Giai đoạn 3</h3>
               </div>
               <div className="cardInfo-detail">

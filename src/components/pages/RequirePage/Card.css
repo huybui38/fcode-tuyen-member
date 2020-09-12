@@ -17,8 +17,9 @@
   
   .require__container-card:hover {
     transform: scale(1.1);
-    transition: 90ms ease-out;
+    transition: .4s ease-out;
     background: #242424;
+    transition-delay: 0.05s;
   }
   
   .require__container-card:nth-child(2), .require__container-card:nth-child(4)  {
