@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.timeline-wrapper {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    padding-bottom: 16%;
+    /* height: 300vh; */
+    
+}
+
+.timeline-header {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 48px;
+    padding: 80px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    color: #b33939;
+    letter-spacing: .05em;
+    text-shadow: 
+        /* 4px 4px 0px #d5d5d5, 
+        7px 7px 0px rgba(0, 0, 0, 0.2);      */
+        4px 4px 0px #e74c3c, 
+        7px 7px 0px #f1c40f;  
+    cursor: default;
+    transition: .2s ease-in;
+    
+}
+
+.timeline-header:hover {
+    letter-spacing: 7px;
+    transform: rotate(12deg)
+}
+
+.vertical-timeline-element-content p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+}
+
+.vertical-timeline-element-date {
+    color: white;
+}
+
+.vertical-timeline-element-content {
+    border: 2px groove #000;
+    border-radius: 10px;
+}
+
+.vertical-timeline-element:nth-child(1) .vertical-timeline-element-content {
+    box-shadow: -7px 7px 20px 0px #d63031;
+}
+
+.vertical-timeline-element:nth-child(2) .vertical-timeline-element-content {
+    box-shadow: 7px -7px 20px 0px#00b894;
+}
+
+.vertical-timeline-element:nth-child(3) .vertical-timeline-element-content {
+    box-shadow: -7px 7px 20px 0px #0984e3;
+}
+
+.vertical-timeline-element:nth-child(4) .vertical-timeline-element-content {
+    box-shadow: 7px -7px 20px 0px#fdcb6e;
+}
+
+.vertical-timeline-element:nth-child(5) .vertical-timeline-element-content {
+    box-shadow: -7px 7px 20px 0px #B53471;
+}
+
+
+
+
+
+.vertical-timeline-element-content-arrow {
+     border-right: 12px solid #fff;
+}

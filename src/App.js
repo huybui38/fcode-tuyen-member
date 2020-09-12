@@ -6,13 +6,13 @@ import Home from './components/pages/Homepage/Home';
 import About from './components/pages/Info page/About';
 import Card from './components/pages/RequirePage/Card';
 import Challenge from './components/pages/Challengepage/Challenge';
+import Timeline from './components/pages/Timeline/Timeline';
 import './App.css';
 
 const App = () => (
   <Router>
 
-    <Challenge />
-    <Footer />
+    <Timeline />
 
     {/* <Switch>
       <Route path="/" exact component={Card} />
