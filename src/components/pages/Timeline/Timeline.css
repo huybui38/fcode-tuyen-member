@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Bungee+Shade&display=swap');
 
 .timeline-wrapper {
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
-    padding-bottom: 16%;
+    padding-bottom: 25%;
     /* height: 300vh; */
     
 }
@@ -10,8 +11,6 @@
 .timeline-header {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     font-size: 48px;
-    padding: 80px 50px;
-    text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     text-align: center;
@@ -24,52 +23,169 @@
         7px 7px 0px #f1c40f;  
     cursor: default;
     transition: .2s ease-in;
-    
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 35px;
 }
 
-.timeline-header:hover {
+.timeline-header h1:hover {
     letter-spacing: 7px;
     transform: rotate(12deg)
 }
 
+.vertical-timeline-element-content h2 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 30px;
+    cursor: default;
+    padding-left: 15px;
+}
+
+/* ---------------- DATE & PARAGRAPH MODIFY ----------------*/
+.vertical-timeline-element:nth-child(1) .vertical-timeline-element-content h2 {
+    border: 6px dotted #d63031;
+}
+
+.vertical-timeline-element:nth-child(1) .vertical-timeline-element-date {
+    color: #eb2f06;
+    transition: .2s ease-in;
+    opacity: 1;
+}
+
+.vertical-timeline-element:nth-child(1) .vertical-timeline-element-date:hover {
+    background: #d63031 !important;
+    color: #fff;
+    transform: rotateZ(15deg)
+}
+
+
+.vertical-timeline-element:nth-child(2) .vertical-timeline-element-content h2 {
+    border: 6px dotted #00b894;
+}
+
+.vertical-timeline-element:nth-child(2) .vertical-timeline-element-date {
+    color: #20bf6b;
+    transition: .2s ease-in;
+    opacity: 1;
+}
+
+.vertical-timeline-element:nth-child(2) .vertical-timeline-element-date:hover {
+    background: #20bf6b !important;
+    color: #fff;
+    transform: rotateZ(-15deg);
+}
+
+.vertical-timeline-element:nth-child(3) .vertical-timeline-element-content h2 {
+    border: 6px dotted #0984e3;
+}
+
+.vertical-timeline-element:nth-child(3) .vertical-timeline-element-date {
+    color: #0984e3;
+    transition: .2s ease-in;
+    opacity: 1;
+}
+
+.vertical-timeline-element:nth-child(3) .vertical-timeline-element-date:hover {
+    background: #0984e3 !important;
+    color: #fff;
+    transform: rotateZ(15deg);
+}
+
+.vertical-timeline-element:nth-child(4) .vertical-timeline-element-content h2 {
+    border: 6px dotted #fed330;
+}
+
+.vertical-timeline-element:nth-child(4) .vertical-timeline-element-date {
+    color: #ffff00;
+    transition: .2s ease-in;
+    opacity: 1;
+}
+
+.vertical-timeline-element:nth-child(4) .vertical-timeline-element-date:hover {
+    background: #fed330 !important;
+    color: #fff;
+    transform: rotateZ(-15deg);
+}
+
+.vertical-timeline-element:nth-child(5) .vertical-timeline-element-content h2 {
+    border: 6px dotted  #E3008C;
+}
+
+.vertical-timeline-element:nth-child(5) .vertical-timeline-element-date {
+    color: #E3008C;
+    transition: .2s ease-in;
+    opacity: 1;
+}
+
+.vertical-timeline-element:nth-child(5) .vertical-timeline-element-date:hover {
+    background: #E3008C !important;
+    color: #fff;
+    transform: rotateZ(-15deg);
+}
+
+/*--------------------------------------------------*/
 .vertical-timeline-element-content p {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
+    cursor: default;
 }
 
 .vertical-timeline-element-date {
-    color: white;
+    border-radius: 3px;
+    text-align: center !important;
+    cursor: default;
+    border: 8px double white;
+    width: 47% !important;
+    font-size: 25px !important;
+    font-weight: bolder !important;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: -20px;
+    letter-spacing: 3px;
 }
 
 .vertical-timeline-element-content {
-    border: 2px groove #000;
-    border-radius: 10px;
+    border: 1px groove ;
+    border-radius: 3px;
 }
 
 .vertical-timeline-element:nth-child(1) .vertical-timeline-element-content {
-    box-shadow: -7px 7px 20px 0px #d63031;
+    box-shadow: -4px 5px 0px 0px #d63031;
 }
 
 .vertical-timeline-element:nth-child(2) .vertical-timeline-element-content {
-    box-shadow: 7px -7px 20px 0px#00b894;
+    box-shadow: 5px -4px 0px 0px #00b894;
 }
 
 .vertical-timeline-element:nth-child(3) .vertical-timeline-element-content {
-    box-shadow: -7px 7px 20px 0px #0984e3;
+    box-shadow: -4px 5px 0px 0px #0984e3;
 }
 
 .vertical-timeline-element:nth-child(4) .vertical-timeline-element-content {
-    box-shadow: 7px -7px 20px 0px#fdcb6e;
+    box-shadow: 5px -4px 0px 0px #fed330;
 }
 
 .vertical-timeline-element:nth-child(5) .vertical-timeline-element-content {
-    box-shadow: -7px 7px 20px 0px #B53471;
+    box-shadow: -4px 5px 0px 0px #E3008C;
 }
-
-
-
 
 
 .vertical-timeline-element-content-arrow {
      border-right: 12px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-header {
+        font-size: 28px;
+    }
+
+    .vertical-timeline-element-content h2 {
+        font-size: 20px;
+    }
+
+    .vertical-timeline-element-date {
+        font-size: 20px !important;
+        width: 100% !important;
+        padding-top: 20px !important;
+        padding-bottom: 6px !important;
+    }
 }
