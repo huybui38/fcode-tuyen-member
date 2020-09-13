@@ -51,7 +51,6 @@ function Challenge() {
                   ĐĂNG KÝ
                 </Button>
               </Collapsible>
-
             </div>
           </div>
 
@@ -72,7 +71,9 @@ function Challenge() {
                   <span className="progress-status-text">Đang chờ</span>
                 </div>
               </div>
-              <RiArrowDropDownFill className="toggle-arrow invalid-toggle" />
+              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick} />}>
+                <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
+              </Collapsible>
             </div>
           </div>
 
@@ -93,7 +94,9 @@ function Challenge() {
                   <span className="progress-status-text">Đang chờ</span>
                 </div>
               </div>
-              <RiArrowDropDownFill className="toggle-arrow invalid-toggle" />
+              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick} />}>
+                <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
+              </Collapsible>
             </div>
           </div>
 

@@ -5,9 +5,8 @@ import {
   FaFacebook,
   FaYoutube,
 } from 'react-icons/fa';
-import logo from './logo.png';
 
-function Footer() {
+function AppFooter() {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
@@ -23,8 +22,8 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="contact">
             <h2>Liên hệ</h2>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Website</Link>
+            <Link to="//www.facebook.com/fcodefpt" target="_blank">Facebook</Link>
+            <Link to="//fcodehcm.wordpress.com" target="_blank">Website</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
@@ -41,4 +40,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default AppFooter;

@@ -41,6 +41,11 @@
     padding-left: 15px;
 }
 
+.signup-link {
+    color: #0984e3;
+    cursor: pointer;
+}
+
 /* ---------------- DATE & PARAGRAPH MODIFY ----------------*/
 .vertical-timeline-element:nth-child(1) .vertical-timeline-element-content h2 {
     border: 6px dotted #d63031;
@@ -120,7 +125,7 @@
 .vertical-timeline-element:nth-child(5) .vertical-timeline-element-date:hover {
     background: #E3008C !important;
     color: #fff;
-    transform: rotateZ(-15deg);
+    transform: rotateZ(15deg);
 }
 
 /*--------------------------------------------------*/

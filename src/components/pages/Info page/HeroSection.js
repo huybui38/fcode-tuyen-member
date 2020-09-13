@@ -42,7 +42,7 @@ function HeroSection({
                   {description}
                 </p>
                 <div className="visit-link">
-                  <span className="visit-text">Xem thêm</span>
+                  <Link to="//fcodehcm.wordpress.com" target="_blank" className="visit-text">Xem thêm</Link>
                   <span className="link-arrow"><FaArrowRight /></span>
                 </div>
 

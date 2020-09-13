@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #fafafa;
+    background-color: #1c2237;
+    
   }
   
   .require__container-card {
@@ -16,15 +17,29 @@
   }
   
   .require__container-card:hover {
-    transform: scale(1.1);
-    transition: .4s ease-out;
-    background-color: #29539b;
-background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
-    transition-delay: 0.05s;
+    
+    transition: .5s ease-in;
+    background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    animation: pile-hover 1s infinite;
+    
+  }
+
+  @keyframes pile-hover {
+    0% {
+      -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #5FB8FF, 20px 20px 0px 0px #5FB8FF, 25px 25px 0px 0px #5FB8FF, 0px 0px 0px 0px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #5FB8FF, 20px 20px 0px 0px #5FB8FF, 25px 25px 0px 0px #5FB8FF, 0px 0px 0px 0px rgba(0,0,0,0);
+    }
+    
+    20% {
+      -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #5FB8FF, 20px 20px 0px 0px #5FB8FF, 25px 25px 0px 0px #5FB8FF, 0px 0px 0px 0px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #5FB8FF, 20px 20px 0px 0px #5FB8FF, 25px 25px 0px 0px #5FB8FF, 0px 0px 0px 0px rgba(0,0,0,0);
+    }
+
   }
   
   .require__container-card:nth-child(2), .require__container-card:nth-child(4)  {
-    margin: 0 24px;
+    margin: 0 27px;
   }
   
   .require__container {
@@ -43,13 +58,17 @@ background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
   .require__heading {
     margin-bottom: 20px;
     cursor: default;
-    font-size: 2.2em;
+    font-size: 2.4em;
+    color: #FFFFFF;
+
+text-shadow: 0 0 10px #FFFFFF;
+
   }
   
   .require__container-cardInfo {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100%px;
     padding: 24px;
     align-items: center;
     color: #fff;
@@ -96,8 +115,15 @@ background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
     }
 
     .require__container-card:hover {
-      transform: scale(1.06);
       transition: all 0.4s ease-out;
-      background: #242424;
+      animation: pile-hover 1s infinite;
+
     }
   }
+
+  /* FROM 1024px to 1440px */ 
+@media screen and (min-width: 961px) and (max-width: 1227px) {
+  .require__section {
+    width: 128%;
+  }
+}

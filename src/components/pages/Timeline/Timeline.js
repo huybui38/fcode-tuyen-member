@@ -6,6 +6,7 @@ import './Timeline.css';
 import './Star.css';
 import { FaWpforms } from 'react-icons/fa';
 import { AiTwotoneFire } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Timeline() {
   return (
@@ -25,7 +26,11 @@ function Timeline() {
         >
           <h2 className="vertical-timeline-element-title">Signup form</h2>
           <p>
-            Form đăng ký đã được mở và sẽ kết thúc vào ngày chủ nhật (27/09). Bạn hãy nhấn vào đây để đăng ký.
+            Form đăng ký đã được mở và sẽ kết thúc vào ngày chủ nhật (27/09). Bạn hãy nhấn
+            {' '}
+            <Link to="/" target="_blank" className="signup-link">vào đây</Link>
+            {' '}
+            để đăng ký.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

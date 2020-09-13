@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Button from '../../Button';
+import Button from './Button';
 
 function Home() {
   return (
@@ -14,6 +14,7 @@ function Home() {
           buttonSize="btn--large"
         >
           ĐĂNG KÝ
+          <div className="back" />
         </Button>
 
         <Button

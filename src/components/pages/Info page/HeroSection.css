@@ -37,6 +37,7 @@
     font-weight: 600;    
     cursor: default;
     transition: 50ms;
+
   }
 
   .heading:hover {
@@ -72,12 +73,13 @@
     padding-right: 0;
   }
   
-  .visit-link {
+  .visit-link, .visit-link a {
     color: #5a73fc;
     cursor: pointer;
     display: inline-block; 
     flex-wrap: wrap;
     flex-direction: row;
+    text-decoration: none;
   }
 
   .visit-link:hover {
@@ -263,7 +265,11 @@
     }
   }
   /*------------------------------------- */
-
+  @media screen and (min-width: 961px) and (max-width: 1227px) {
+    .home__hero-section {
+      width: 128%;
+    }
+  }
   
   
   

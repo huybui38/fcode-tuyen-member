@@ -1,7 +1,7 @@
 .hero-container {
     background-image: url('background.jpg');
     background-size: cover;
-    opacity: 85%;
+    opacity: 75%;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -27,10 +27,11 @@
 
 .hero-btns {
     margin-top: 32px;
+    text-align: center;
 }
 
 .hero-btns, .btn {
-    margin: 6px;
+    margin: 10px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -56,14 +57,21 @@
 
 @media only screen and (max-width: 600px) {
     .hero-container > h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     .hero-container > p {
-        font-size: 25px;
+        font-size: 22px;
+        text-align: center;
     }
 
     .btn {
         width: 85%;
     }
 }
+
+@media screen and (min-width: 961px) and (max-width: 1227px) {
+    .hero-container {
+      width: 128%;
+    }
+  }
