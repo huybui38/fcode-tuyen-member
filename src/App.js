@@ -21,10 +21,10 @@ const App = () => (
     </Header>
 
     <Content>
-      <Home />
-      <About />
-      <Card />
+      {/* <Home /> */}
       <Challenge />
+      {/* <Card />
+      <Challenge /> */}
     </Content>
 
     <Footer>
@@ -35,6 +35,7 @@ const App = () => (
         </div>
       </BackTop>
     </Footer>
+    {/* <Timeline /> */}
 
   </Router>
 

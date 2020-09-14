@@ -21,15 +21,11 @@ function AppFooter() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="contact">
-            <h2>Liên hệ</h2>
-            <Link to="//www.facebook.com/fcodefpt" target="_blank">Facebook</Link>
-            <Link to="//fcodehcm.wordpress.com" target="_blank">Website</Link>
-          </div>
-        </div>
-        <div className="footer-link-wrapper">
-          <div className="icons-wrapper">
-            <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link fb-icon"><FaFacebook /></Link>
-            <Link to="//www.youtube.com/channel/UCZyrUXSrQ1AdkomxYz1GvCw" target="_blank" className="social-icon-link"><FaYoutube /></Link>
+            <Link to="//fcodehcm.wordpress.com" target="_blank" className="web-link">Website</Link>
+            <div className="icons-wrapper">
+              <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link fb-icon"><FaFacebook /></Link>
+              <Link to="//www.youtube.com/channel/UCZyrUXSrQ1AdkomxYz1GvCw" target="_blank" className="social-icon-link"><FaYoutube /></Link>
+            </div>
           </div>
         </div>
       </div>

@@ -17,6 +17,12 @@ function Challenge() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  const [click1, setClick1] = useState(false);
+  const handleClick1 = () => setClick1(!click1);
+
+  const [click2, setClick2] = useState(false);
+  const handleClick2 = () => setClick2(!click2);
+
   return (
 
     <div className="challenge__section">
@@ -71,7 +77,7 @@ function Challenge() {
                   <span className="progress-status-text">Đang chờ</span>
                 </div>
               </div>
-              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick} />}>
+              <Collapsible trigger={click1 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick1} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick1} />}>
                 <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
               </Collapsible>
             </div>
@@ -94,7 +100,7 @@ function Challenge() {
                   <span className="progress-status-text">Đang chờ</span>
                 </div>
               </div>
-              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick} />}>
+              <Collapsible trigger={click2 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick2} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick2} />}>
                 <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
               </Collapsible>
             </div>

@@ -46,31 +46,29 @@
   display: flex;
 }
 
-.contact, .social-media {
+.contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 200px;
   box-sizing: border-box;
   color: #fff;
 }
 
-.contact h2, .social-media h2 {
+.contact h2 {
   margin-bottom: 16px;
   font-size: 1.5rem;
+  width: fit-content;
+  background-color: #f00946;
 }
 
-.social-media > h2 {
+.footer-link-wrapper .web-link {
   color: #fff;
-}
-
-.contact a {
-  color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  padding-top: 5px;
 }
 
 .contact a:hover {
@@ -88,7 +86,7 @@
 
 .social-icon-link {
   color: #fff;
-  font-size: 40px;
+  font-size: 1.3em;
   transition: 50ms ease-in;
 }
 
@@ -98,6 +96,7 @@
 
 .fb-icon {
   margin-right: 30px;
+  margin-left: 30px;
 }
 /*--------------------------------*/
 .website-rights {
@@ -126,12 +125,13 @@
   }
 
   .footer-subscription-heading {
-    font-size: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
   .footer-subscription-text {
-    font-size: 12px;
-    margin-bottom: 5px;
+    font-size: 11px;
+    margin-bottom: 0px;
   }
 
   .footer-links {
@@ -139,27 +139,26 @@
     margin-right: 10px;
   }
 
-  .contact {
-    width: 90px;
-    padding-right: 30px;
-    margin-bottom: 0px;
+  .footer-link-wrapper {
+    padding-left: 55px;
   }
 
-  .contact a {
-    font-size: 10px;
-  }
-
-  .contact h2 {
-    margin-bottom: 10px;
-    font-size: 15px;
+  .footer-link-wrapper .web-link {
+    font-size: 1rem;
   }
 
   .social-icon-link {
-    font-size: 22px;
+    font-size: 20px;
   }
+
+  .fb-icon {
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
   .website-rights {
     font-size: 15px;
+    margin: 0px;
   }
 }
 
@@ -171,10 +170,11 @@
 
   .footer-subscription {
     margin-bottom: 0px;
+    padding:0;
   }
 
   .social-icon-link {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 0px;
   }
 }

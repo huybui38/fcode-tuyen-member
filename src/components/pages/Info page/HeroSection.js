@@ -26,9 +26,9 @@ function HeroSection({
 
             }}
           >
-            <div className="col">
+            <div className="col col-text">
               <div className="home__hero-text-wrapper">
-                <div className="top-line">{topLine}</div>
+
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
                 </h1>
@@ -48,7 +48,7 @@ function HeroSection({
 
               </div>
             </div>
-            <div className="col">
+            <div className="col col-img">
               <div className="home__hero-img-wrapper">
                 <Slider slides={images} className="slider" />
               </div>
