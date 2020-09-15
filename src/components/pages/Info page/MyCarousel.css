@@ -58,6 +58,28 @@
     line-height: 34px;
 }
 
+.visit-link, .visit-link a {
+    color: #5a73fc;
+    cursor: pointer;
+    display: inline-block; 
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.link-arrow {
+    margin-top: 2px;
+}
+
+.visit-link a {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.visit-link:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
 /*----------SMALL DEVICES---------*/
 @media only screen and (max-width: 600px) {
     .text-paragraph-header {

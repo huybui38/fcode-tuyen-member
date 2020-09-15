@@ -82,7 +82,7 @@
     padding-right: 0;
   }
   
-  .visit-link, .visit-link a {
+  /* .visit-link, .visit-link a {
     color: #5a73fc;
     cursor: pointer;
     display: inline-block; 
@@ -94,7 +94,7 @@
   .visit-link:hover {
     text-decoration: underline;
     transform: scale(1.1);
-  }
+  } */
 
   .visit-text {
     font-size: 20px;
