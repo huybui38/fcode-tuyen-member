@@ -9,22 +9,24 @@ import About from './components/pages/Info page/About';
 import Card from './components/pages/RequirePage/Card';
 import Challenge from './components/pages/Challengepage/Challenge';
 import Timeline from './components/pages/Timeline/Timeline';
-
+import MyCarousel from './components/pages/Info page/MyCarousel';
+import Info from './components/pages/Info page/Info';
 import './App.css';
 
 const { Header, Content, Footer } = Layout;
 
 const App = () => (
   <Router>
+
     <Header>
       <Navbar />
     </Header>
 
     <Content>
-      {/* <Home /> */}
+      <Home />
+      <MyCarousel />
+      <Card />
       <Challenge />
-      {/* <Card />
-      <Challenge /> */}
     </Content>
 
     <Footer>
