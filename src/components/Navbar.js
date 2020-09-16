@@ -33,7 +33,6 @@ function Navbar() {
         <div className="navbar-container container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={logo} alt="logo" className="logo-img" />
-            F-CODE
             <img src={slogan} alt="slogan" className="slogan-img" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -44,6 +43,12 @@ function Navbar() {
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                About us
               </Link>
             </li>
 

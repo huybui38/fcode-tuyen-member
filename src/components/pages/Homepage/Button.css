@@ -19,10 +19,10 @@
 }
 
 .btn--outline {
-  background-color: transparent;
-  color: #fff;
+  background-color: #990000;
+  background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
   padding: 8px 20px;
-  border: 2px solid black;
+  border: none;
   transition: all 0.3s ease-out;
   
 }
@@ -35,7 +35,7 @@
 .btn--large {
   padding: 10px 26px;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 
@@ -61,8 +61,10 @@
 .btn--medium:hover,
 .btn--mobile:hover {
   transition: all 0.3s ease-out;
-  background-color: #990000;
-  background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);  
+  background-color: #ff7878;
+background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
+
+ 
   color: #000;
   animation: pulse 1s infinite;
   box-shadow: 0 0 0 2em rgba(#fff,0);

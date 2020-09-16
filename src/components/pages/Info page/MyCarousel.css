@@ -1,17 +1,31 @@
 .carousel-wrapper {
     position: relative;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .InfiniteCarousel {
     position: relative;
-    top: 15px;
-    width: 100%;
+    width: 65%;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 40%;
 }
 
 .InfiniteCarousel  img{
     /* width: 455px; */
-    height: 240px;
+    height: 210px;
+    border: 2px solid blue;
+}
+
+.InfiniteCarousel  img:hover {
+   border: 5px blue solid;
 }
 
 
@@ -43,19 +57,15 @@
     text-align: center;
     padding: 25px 0;
     width: fit-content;
-    cursor: pointer;
     letter-spacing: 5px;
+    color: #d63031;
 }
-
-.text-paragraph-header:hover {
-    transform: scale3d(1.1, 1.3, 1.1);
-    color: #009432;
-  }
 
 .text-paragraph-body {
     font-size: 1.5rem;
     cursor: default;
     line-height: 34px;
+    margin-bottom: 10px;
 }
 
 .visit-link, .visit-link a {
@@ -80,19 +90,41 @@
     transform: scale(1.1);
 }
 
-/*----------SMALL DEVICES---------*/
+/*----------EXTRA SMALL DEVICES---------*/
 @media only screen and (max-width: 600px) {
     .text-paragraph-header {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 700;
-        padding: 25px 0;
+        padding: 20px 0;
         width: fit-content;
         cursor: pointer;
         letter-spacing: 3px;
     }
 
+    .InfiniteCarousel {
+        width: 65%;
+    }
+
     .text-paragraph-body {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 30px;
+        line-height: 22px;
+    }
+
+    .visit-link, .visit-link a {
+        font-size: 15px;
+    }
+}
+
+/*-------- MEDIUM DEVICES --------------*/
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .InfiniteCarousel {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1227px) {
+    .carousel-wrapper {
+        width: 128%;
     }
 }

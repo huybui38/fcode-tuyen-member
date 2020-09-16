@@ -13,7 +13,7 @@ import './MyCarousel.css';
 
 function MyCarousel() {
   return (
-    <div className="carousel-wrapper">
+    <div className="carousel-wrapper" id="carousel-section">
       <div className="content-wrapper">
         <div className="text-paragraph">
           <div className="text-paragraph-header">CLB F-CODE</div>
@@ -24,84 +24,87 @@ function MyCarousel() {
               <span className="link-arrow"><FaArrowRight /></span>
             </span>
           </p>
-
         </div>
       </div>
-      <InfiniteCarousel
-        breakpoints={[
-          {
-            breakpoint: 500,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+
+      <div className="image-wrapper">
+        <InfiniteCarousel
+          breakpoints={[
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
             },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              },
             },
-          },
 
-        ]}
-        dots
-        showSides={false}
-        sidesOpacity={0.5}
-        sideSize={0.1}
-        slidesToScroll={3}
-        slidesToShow={3}
-        scrollOnDevice
-        swipe
-        responsive
-        className="carousel"
-      >
+          ]}
+          dots
+          showSides={false}
+          sidesOpacity={0.5}
+          sideSize={0.1}
+          slidesToScroll={3}
+          slidesToShow={3}
+          scrollOnDevice
+          swipe
+          responsive
+          className="carousel"
+        >
 
-        <div>
-          <img
-            alt=""
-            src={Picture1}
-          />
-        </div>
-        <div>
-          <img
-            alt=""
-            src={Picture2}
-          />
-        </div>
-        <div>
-          <img
-            alt=""
-            src={Picture3}
-          />
-        </div>
+          <div>
+            <img
+              alt=""
+              src={Picture1}
+            />
+          </div>
+          <div>
+            <img
+              alt=""
+              src={Picture2}
+            />
+          </div>
+          <div>
+            <img
+              alt=""
+              src={Picture3}
+            />
+          </div>
 
-        <div>
-          <img
-            alt=""
-            src={Picture4}
-          />
-        </div>
-        <div>
-          <img
-            alt=""
-            src={Picture5}
-          />
-        </div>
-        <div>
-          <img
-            alt=""
-            src={Picture6}
-          />
-        </div>
-        <div>
-          <img
-            alt=""
-            src={Picture7}
-          />
-        </div>
+          <div>
+            <img
+              alt=""
+              src={Picture4}
+            />
+          </div>
+          <div>
+            <img
+              alt=""
+              src={Picture5}
+            />
+          </div>
+          <div>
+            <img
+              alt=""
+              src={Picture6}
+            />
+          </div>
+          <div>
+            <img
+              alt=""
+              src={Picture7}
+            />
+          </div>
 
-      </InfiniteCarousel>
+        </InfiniteCarousel>
+      </div>
+
     </div>
 
   );

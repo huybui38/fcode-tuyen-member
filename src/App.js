@@ -5,12 +5,10 @@ import { BiArrowToTop } from 'react-icons/bi';
 import Navbar from './components/Navbar';
 import AppFooter from './components/AppFooter';
 import Home from './components/pages/Homepage/Home';
-import About from './components/pages/Info page/About';
 import Card from './components/pages/RequirePage/Card';
 import Challenge from './components/pages/Challengepage/Challenge';
 import Timeline from './components/pages/Timeline/Timeline';
 import MyCarousel from './components/pages/Info page/MyCarousel';
-import Info from './components/pages/Info page/Info';
 import './App.css';
 
 const { Header, Content, Footer } = Layout;
