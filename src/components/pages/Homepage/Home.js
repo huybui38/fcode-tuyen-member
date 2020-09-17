@@ -1,6 +1,19 @@
 import React from 'react';
 import './Home.css';
 import Button from './Button';
+import { addUser, signInWithGoogle } from '../../../firebase/user';
+
+function onSignIn() {
+  signInWithGoogle()
+    .then((result) => {
+      // ^([\w]*)+\@fpt\.edu\.vn$
+      addUser(result.user);
+    })
+    .catch((e) => {
+      // callback(e);
+      console.error(e);
+    });
+}
 
 function Home() {
   return (
@@ -12,6 +25,7 @@ function Home() {
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
+          onClick={onSignIn}
         >
           ĐĂNG KÝ
           <div className="back" />
