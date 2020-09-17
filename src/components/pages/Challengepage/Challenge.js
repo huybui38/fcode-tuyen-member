@@ -4,12 +4,8 @@ import { GiWeightLiftingUp, GiFlyingFlag } from 'react-icons/gi';
 import { AiOutlineCheckCircle, AiOutlineFileSearch } from 'react-icons/ai';
 import { RiArrowDropDownFill, RiArrowDropUpFill } from 'react-icons/ri';
 import { Spin } from 'antd';
+import { Link } from 'react-router-dom';
 import { LoadingOutlined } from '@ant-design/icons';
-// import {
-//   CollapsibleComponent,
-//   CollapsibleHead,
-//   CollapsibleContent,
-// } from 'react-collapsible-component';
 import Collapsible from 'react-collapsible';
 import Button from './ButtonC';
 
@@ -49,13 +45,16 @@ function Challenge() {
 
               <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick} />}>
                 <p className="expanded-text">Bạn nào chưa đăng ký tham gia thì hãy ấn ngay nút "Đăng ký" bên dưới ngay nhé! </p>
-                <Button
-                  buttonStyle="btn--primary"
-                  buttonSize="btn--mobile"
-                  buttonColor="red"
-                >
-                  ĐĂNG KÝ
-                </Button>
+                <Link to="/signup">
+                  <Button
+                    buttonStyle="btn--primary"
+                    buttonSize="btn--mobile"
+                    buttonColor="red"
+                  >
+                    ĐĂNG KÝ
+                  </Button>
+
+                </Link>
               </Collapsible>
             </div>
           </div>

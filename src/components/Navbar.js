@@ -61,11 +61,11 @@ function Navbar() {
 
             <li className="nav-btn">
               {button ? (
-                <Link to="/sign-up" className="btn-link">
+                <Link to="/signup" className="btn-link">
                   <Button buttonStyle="btn--outline">ĐĂNG KÝ</Button>
                 </Link>
               ) : (
-                <Link to="/sign-up" className="btn-link">
+                <Link to="/signup" className="btn-link">
                   <Button
                     buttonStyle="btn--outline"
                     buttonSize="btn--mobile"
