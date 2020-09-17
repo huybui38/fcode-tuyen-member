@@ -1,7 +1,11 @@
 import React from 'react';
 import './Login.css';
-import { Steps, Divider } from 'antd';
-import 'antd/dist/antd.css';
+
+import Divider from 'antd/lib/divider';
+import Steps from 'antd/lib/steps';
+import 'antd/lib/divider/style/index.css';
+import 'antd/lib/steps/style/index.css';
+
 import GoogleLogin from 'react-google-login';
 
 const { Step } = Steps;
