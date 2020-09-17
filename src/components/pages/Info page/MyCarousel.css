@@ -59,6 +59,7 @@
     width: fit-content;
     letter-spacing: 5px;
     color: #d63031;
+    cursor: default;
 }
 
 .text-paragraph-body {
@@ -71,13 +72,13 @@
 .visit-link, .visit-link a {
     color: #5a73fc;
     cursor: pointer;
-    display: inline-block; 
+    display: inline-flex; 
     text-decoration: none;
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .link-arrow {
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 .visit-link a {

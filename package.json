@@ -15,7 +15,7 @@
     "react": "^16.13.1",
     "react-collapsible": "^2.8.0",
     "react-dom": "^16.13.1",
-    "react-elastic-carousel": "^0.7.5",
+    "react-google-login": "^5.1.21",
     "react-icons": "^3.11.0",
     "react-leaf-carousel": "^2.0.3",
     "react-router-dom": "^5.2.0",
