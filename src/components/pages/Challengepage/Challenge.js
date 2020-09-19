@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Challenge.css';
 import { GiWeightLiftingUp, GiFlyingFlag } from 'react-icons/gi';
 import { AiOutlineCheckCircle, AiOutlineFileSearch } from 'react-icons/ai';

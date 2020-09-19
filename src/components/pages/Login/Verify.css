@@ -1,0 +1,30 @@
+.verify-form-wrapper {
+    justify-content: center;
+    text-align: center;
+}
+
+.verify-text {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.verify-box {
+    background-color: #0984e3;
+    display: inline-flex;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.verify-button {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.verify-box:hover, .verify-box-box:active {
+    border: 1px solid cornflowerblue;
+    box-shadow: 1px 2px 5px #74b9ff;
+    transform: scale(1.05);
+}

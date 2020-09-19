@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css';
 import Divider from 'antd/lib/divider';
 import Steps from 'antd/lib/steps';
 import 'antd/lib/divider/style/index.css';
 import 'antd/lib/steps/style/index.css';
-import GoogleLogin from 'react-google-login';
+import LoginSection from './LoginSection';
+import InfoForm from './Information';
+import Verify from './Verify';
 
 const { Step } = Steps;
 
@@ -25,14 +27,10 @@ function Login() {
         <Divider />
       </div>
 
-      <div className="login-section">
-        <p>Vui lòng sử dụng mail FPT để đăng nhập</p>
-        <GoogleLogin
-          clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-          buttonText="Sign in with Google"
-          cookiePolicy="single_host_origin"
-        />
-      </div>
+      {/* <InfoForm/> */}
+      {/* <Verify /> */}
+
+      <LoginSection />
     </div>
   );
 }

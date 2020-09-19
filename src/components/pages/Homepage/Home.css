@@ -1,8 +1,8 @@
 .hero-container {
-    background-image: url('background3.png');
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 100%;
+    opacity: 75%;
     height: 100vh;
     width: 100%;
     display: flex;
