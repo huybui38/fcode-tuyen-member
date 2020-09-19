@@ -7,11 +7,21 @@ function onSignIn() {
   signInWithGoogle()
     .then((result) => {
       // ^([\w]*)+\@fpt\.edu\.vn$
-      addUser(result.user);
+      const phone = '012345678';
+      const facebook = 'https://www.facebook.com/';
+      const sampleUser = {
+        email: result.user.email,
+        name: result.user.displayName,
+        phone,
+        facebook,
+
+      };
+      console.log(sampleUser);
+      addUser(sampleUser);
     })
     .catch((e) => {
       // callback(e);
-      console.error(e);
+      console.error(`signIn${e}`);
     });
 }
 
