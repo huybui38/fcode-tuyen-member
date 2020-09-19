@@ -10,15 +10,14 @@
 
 .timeline-header {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    font-size: 48px;
+    font-size: 78px;
+    font-weight: 700;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     text-align: center;
     color: #b33939;
     letter-spacing: .05em;
     text-shadow: 
-        /* 4px 4px 0px #d5d5d5, 
-        7px 7px 0px rgba(0, 0, 0, 0.2);      */
         4px 4px 0px #e74c3c, 
         7px 7px 0px #f1c40f;  
     cursor: default;
@@ -29,12 +28,12 @@
     margin-bottom: 35px;
 }
 
-.timeline-header h1:hover {
+.timeline-header div:hover {
     letter-spacing: 7px;
     transform: rotate(12deg)
 }
 
-.vertical-timeline-element-content h2 {
+.vertical-timeline-element-content div {
     font-family: 'Bungee Shade', cursive;
     font-size: 30px;
     cursor: default;
@@ -47,7 +46,7 @@
 }
 
 /* ---------------- DATE & PARAGRAPH MODIFY ----------------*/
-.vertical-timeline-element:nth-child(1) .vertical-timeline-element-content h2 {
+.vertical-timeline-element:nth-child(1) .vertical-timeline-element-content .vertical-timeline-element-title {
     border: 6px dotted #d63031;
 }
 
@@ -64,7 +63,7 @@
 }
 
 
-.vertical-timeline-element:nth-child(2) .vertical-timeline-element-content h2 {
+.vertical-timeline-element:nth-child(2) .vertical-timeline-element-content .vertical-timeline-element-title {
     border: 6px dotted #00b894;
 }
 
@@ -80,7 +79,7 @@
     transform: rotateZ(-15deg);
 }
 
-.vertical-timeline-element:nth-child(3) .vertical-timeline-element-content h2 {
+.vertical-timeline-element:nth-child(3) .vertical-timeline-element-content .vertical-timeline-element-title {
     border: 6px dotted #0984e3;
 }
 
@@ -96,7 +95,7 @@
     transform: rotateZ(15deg);
 }
 
-.vertical-timeline-element:nth-child(4) .vertical-timeline-element-content h2 {
+.vertical-timeline-element:nth-child(4) .vertical-timeline-element-content .vertical-timeline-element-title {
     border: 6px dotted #fed330;
 }
 
@@ -112,7 +111,7 @@
     transform: rotateZ(-15deg);
 }
 
-.vertical-timeline-element:nth-child(5) .vertical-timeline-element-content h2 {
+.vertical-timeline-element:nth-child(5) .vertical-timeline-element-content .vertical-timeline-element-title {
     border: 6px dotted  #E3008C;
 }
 
@@ -180,10 +179,10 @@
 
 @media screen and (max-width: 768px) {
     .timeline-header {
-        font-size: 28px;
+        font-size: 58px;
     }
 
-    .vertical-timeline-element-content h2 {
+    .vertical-timeline-element-content div {
         font-size: 20px;
     }
 

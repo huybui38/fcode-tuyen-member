@@ -7,12 +7,12 @@ import './App.css';
 
 const App = () => (
   <Router>
-    {/* <Switch>
-       <Route path="/" exact component={FullPage} />
-       <Route path="/timeline" component={Timeline} />
-       <Route path="/signup" component={Login} />
-     </Switch> */}
-    <Login />
+    <Switch>
+      <Route path="/" exact component={FullPage} />
+      <Route path="/timeline" component={Timeline} />
+      <Route path="/signup" component={Login} />
+    </Switch>
+
   </Router>
 
 );

@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     height: 40%;
+    margin-bottom: 40px;
 }
 
 .InfiniteCarousel  img{
@@ -27,8 +28,6 @@
 .InfiniteCarousel  img:hover {
    border: 5px blue solid;
 }
-
-
 
 .photo-wrapper {
     width: max-content;
@@ -49,6 +48,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .text-paragraph-header {
@@ -67,6 +67,7 @@
     cursor: default;
     line-height: 34px;
     margin-bottom: 10px;
+    font-family: sans-serif;
 }
 
 .visit-link, .visit-link a {

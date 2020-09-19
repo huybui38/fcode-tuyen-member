@@ -15,7 +15,7 @@ function Timeline() {
       <div id="stars2" />
       <div id="stars3" />
       <div className="timeline-header">
-        <h1>Timeline</h1>
+        <div>Timeline</div>
       </div>
       <VerticalTimeline>
         <VerticalTimelineElement
@@ -24,7 +24,7 @@ function Timeline() {
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<FaWpforms />}
         >
-          <h2 className="vertical-timeline-element-title">Signup form</h2>
+          <div className="vertical-timeline-element-title">Signup form</div>
           <p>
             Form đăng ký đã được mở và sẽ kết thúc vào ngày chủ nhật (27/09). Bạn hãy nhấn
             {' '}
@@ -39,7 +39,7 @@ function Timeline() {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<GiTalk />}
         >
-          <h2 className="vertical-timeline-element-title">Offline</h2>
+          <div className="vertical-timeline-element-title">Offline</div>
           <p>
             Vào ngày thứ 7 (17/10), CLB B F-Code sẽ tổ chức buổi offline đầu tiên cho các bạn K16. Qua đó, các bạn sẽ được CLB công bố các thử thách và chính thức thực hiện. Các bạn hãy chú ý check mail nhé.
           </p>
@@ -50,7 +50,7 @@ function Timeline() {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<AiTwotoneFire />}
         >
-          <h2 className="vertical-timeline-element-title">Challenge 1</h2>
+          <div className="vertical-timeline-element-title">Challenge 1</div>
           <p>
             Nội dung của thử thách sẽ được công bố vào ngày Offline 03/11. Để có thể tham gia thử thách tiếp theo cũng như để trở thành thành viên CLB thì các bạn phải vượt qua thử thách này.
           </p>
@@ -61,7 +61,7 @@ function Timeline() {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<GiFairyWings />}
         >
-          <h2 className="vertical-timeline-element-title">Challenge 2</h2>
+          <div className="vertical-timeline-element-title">Challenge 2</div>
           <p>
             Nội dung thử thách sẽ được công bố vào buổi offline. Đây là thử thách chính và cuối cùng trước khi các bạn trở thành thành viên chính thức của CLB.
           </p>
@@ -72,7 +72,7 @@ function Timeline() {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<GiTrophyCup />}
         >
-          <h2 className="vertical-timeline-element-title">Final</h2>
+          <div className="vertical-timeline-element-title">Final</div>
 
           <p>
             Thời điểm mà thử thách thứ 2 để tham gia vào CLB đã kết thúc. Vào ngày 03/12, CLB sẽ công bố kết quả của đợt tuyển thành viên cũng như các giải thưởng mà các bạn đạt được.

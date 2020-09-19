@@ -63,6 +63,8 @@ text-shadow: 0 0 10px #FFFFFF;
     margin-bottom: 20px;
     font-size: 24px;
     cursor: default;
+    font-weight: 650;
+    color: #fff;
   }
   
   .require__container-cardInfo p {

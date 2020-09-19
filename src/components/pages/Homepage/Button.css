@@ -24,7 +24,7 @@
   padding: 8px 20px;
   border: none;
   transition: all 0.3s ease-out;
-  
+  color: #000;
 }
 
 .btn--medium {
@@ -63,8 +63,6 @@
   transition: all 0.3s ease-out;
   background-color: #ff7878;
 background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
-  
- 
   color: #000;
   animation: pulse 1s infinite;
   box-shadow: 0 0 0 2em rgba(#fff,0);
@@ -87,6 +85,7 @@ background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
   padding: 8px 16px;
   height: 100%;
   width: 100%;
+  margin-top: 15px;
 }
 
 .primary {
