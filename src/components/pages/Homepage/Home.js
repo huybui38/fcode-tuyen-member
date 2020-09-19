@@ -2,6 +2,29 @@ import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import { addUser, signInWithGoogle } from '../../../firebase/user';
+
+function onSignIn() {
+  signInWithGoogle()
+    .then((result) => {
+      // ^([\w]*)+\@fpt\.edu\.vn$
+      const phone = '012345678';
+      const facebook = 'https://www.facebook.com/';
+      const sampleUser = {
+        email: result.user.email,
+        name: result.user.displayName,
+        phone,
+        facebook,
+
+      };
+      console.log(sampleUser);
+      addUser(sampleUser);
+    })
+    .catch((e) => {
+      // callback(e);
+      console.error(`signIn${e}`);
+    });
+}
 
 function Home() {
   return (
