@@ -5,7 +5,8 @@ import { GiTalk, GiTrophyCup, GiFairyWings } from 'react-icons/gi';
 import './Timeline.css';
 import './Star.css';
 import { FaWpforms } from 'react-icons/fa';
-import { AiTwotoneFire } from 'react-icons/ai';
+import { AiTwotoneFire, AiOutlineArrowLeft } from 'react-icons/ai';
+import { BsBoxArrowLeft } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 function Timeline() {
@@ -17,6 +18,7 @@ function Timeline() {
       <div className="timeline-header">
         <div>Timeline</div>
       </div>
+      <Link to="/"><BsBoxArrowLeft className="back-button" /></Link>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

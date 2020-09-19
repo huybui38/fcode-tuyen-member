@@ -27,10 +27,10 @@ function Login() {
         <Divider />
       </div>
 
-      {/* <InfoForm/> */}
+      <InfoForm />
       {/* <Verify /> */}
 
-      <LoginSection />
+      {/* <LoginSection /> */}
     </div>
   );
 }

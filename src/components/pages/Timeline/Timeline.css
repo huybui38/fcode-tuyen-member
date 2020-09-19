@@ -4,8 +4,6 @@
 .timeline-wrapper {
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     padding-bottom: 25%;
-    /* height: 300vh; */
-    
 }
 
 .timeline-header {
@@ -31,6 +29,20 @@
 .timeline-header div:hover {
     letter-spacing: 7px;
     transform: rotate(12deg)
+}
+
+.back-button {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 550;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+.vertical-timeline-element-title {
+    color: black;
 }
 
 .vertical-timeline-element-content div {
@@ -191,5 +203,42 @@
         width: 100% !important;
         padding-top: 20px !important;
         padding-bottom: 6px !important;
+    }
+
+    .back-button {
+        top: 35px;
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .vertical-timeline-element:nth-child(1) .vertical-timeline-element-date:hover {
+        transform: none;
+        background: none !important;
+        color: #d63031;
+    }
+
+    .vertical-timeline-element:nth-child(2) .vertical-timeline-element-date:hover {
+        transform: none;
+        background: none !important;
+        color: #20bf6b;
+    }
+
+    .vertical-timeline-element:nth-child(3) .vertical-timeline-element-date:hover {
+        transform: none;
+        background: none !important;
+        color: #0984e3;
+    }
+
+    .vertical-timeline-element:nth-child(4) .vertical-timeline-element-date:hover {
+        transform: none;
+        background: none !important;
+        color: #ffff00;
+    }
+
+    .vertical-timeline-element:nth-child(5) .vertical-timeline-element-date:hover {
+        transform: none;
+        background: none !important;
+        color: #E3008C;
     }
 }
