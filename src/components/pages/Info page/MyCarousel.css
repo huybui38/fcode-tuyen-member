@@ -20,13 +20,14 @@
 }
 
 .InfiniteCarousel  img{
-    /* width: 455px; */
     height: 210px;
     border: 2px solid blue;
 }
 
 .InfiniteCarousel  img:hover {
-   border: 5px blue solid;
+   /* z-index: 1;
+   transform: scale(1.25);
+   box-shadow: 0 25px 40px rgba(0, 0, 0, .5); */
 }
 
 .photo-wrapper {
@@ -130,3 +131,15 @@
         width: 128%;
     }
 }
+
+
+/*------------LARGE DEVICES -----------*/
+/* @media screen and (min-width: 976px) {
+    .InfiniteCarousel {
+        width: 59%;
+    }
+
+    .InfiniteCarousel  img {
+        width: 80%;
+    }
+} */

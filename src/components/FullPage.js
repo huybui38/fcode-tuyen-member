@@ -21,7 +21,7 @@ const FullPage = () => (
     <Content>
 
       <Home />
-
+      <MyCarousel />
       <Card />
       <Challenge />
     </Content>

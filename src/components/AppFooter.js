@@ -1,10 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import {
-  FaFacebook,
-  FaYoutube,
-} from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
+import { CgWebsite } from 'react-icons/cg';
 
 function AppFooter() {
   return (
@@ -21,10 +19,9 @@ function AppFooter() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="contact">
-            <Link to="//fcodehcm.wordpress.com" target="_blank" className="web-link">Website</Link>
             <div className="icons-wrapper">
               <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link fb-icon"><FaFacebook /></Link>
-
+              <Link to="//fcodehcm.wordpress.com/" target="_blank" className="social-icon-link web-icon"><CgWebsite /></Link>
             </div>
           </div>
         </div>
