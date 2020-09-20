@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "web-member-k16"
+    "production": "fcode-k16",
+    "default": "fcode-k16"
   }
 }

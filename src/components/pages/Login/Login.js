@@ -16,7 +16,7 @@ import { firebase } from '../../../firebase/firebase';
 
 const { Step } = Steps;
 function Login() {
-  const [userData, setUserData] = useState({});
+  const [userData, setUserData] = useState();
   const [step, setStep] = useState(0);
   const [isConfirm, setIsConfirm] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,7 @@ function Login() {
   const gotoStep = (nextStep) => setStep(nextStep - 1);
   useEffect(() => {
     setLoading(true);
-    console.log('loading');
+    // console.log('loading');
     firebase.auth().signOut()
       .then(() => setLoading(false))
       .catch((e) => {
@@ -62,7 +62,7 @@ function Login() {
         <Divider />
         {error ? (
           <Alert
-            message="Đã có lỗi xảy r"
+            message="Đã có lỗi xảy ra!!!"
             description={error}
             type="error"
             closable

@@ -1,13 +1,15 @@
-import _firebase from 'firebase';
+import _firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDdVppCfueHq5uvfDprFTu_lQo66-XxwZo',
-  authDomain: 'web-member-k16.firebaseapp.com',
-  databaseURL: 'https://web-member-k16.firebaseio.com',
-  projectId: 'web-member-k16',
-  storageBucket: 'web-member-k16.appspot.com',
-  messagingSenderId: '1002605745910',
-  appId: '1:1002605745910:web:11323d6accc1cb31ecbed7',
+  apiKey: 'AIzaSyDZ8JcB7FtwWxqKT9irbqXk2pS7bs2D_fc',
+  authDomain: 'fcode-k16.firebaseapp.com',
+  databaseURL: 'https://fcode-k16.firebaseio.com',
+  projectId: 'fcode-k16',
+  storageBucket: 'fcode-k16.appspot.com',
+  messagingSenderId: '761414295095',
+  appId: '1:761414295095:web:facb599f53aa8286fc69b2',
 };
 _firebase.initializeApp(firebaseConfig);
 export const auth = _firebase.auth();

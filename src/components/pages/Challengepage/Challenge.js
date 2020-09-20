@@ -49,7 +49,7 @@ function Challenge() {
                 </div>
               </div>
 
-              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick(); closeChallenge2(); closeChallenge3(); }} />}>
+              <Collapsible open={click} trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick(); closeChallenge2(); closeChallenge3(); }} />}>
                 <div className={click ? 'able-info' : 'unable-info'}>
                   <p className="expanded-text">Bạn nào chưa đăng ký tham gia thì hãy ấn ngay nút "Đăng ký" bên dưới ngay nhé! </p>
                   <Link to="/signup">
@@ -85,7 +85,7 @@ function Challenge() {
                   <span className="progress-status-text">Đang chờ</span>
                 </div>
               </div>
-              <Collapsible trigger={click1 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick1} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick1(); closeChallenge1(); closeChallenge3(); }} />}>
+              <Collapsible open={click1} trigger={click1 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick1} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick1(); closeChallenge1(); closeChallenge3(); }} />}>
                 <div className={click1 ? 'able-info' : 'unable-info'}>
                   <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
                 </div>
@@ -110,7 +110,7 @@ function Challenge() {
                   <span className="progress-status-text">Đang chờ</span>
                 </div>
               </div>
-              <Collapsible trigger={click2 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick2} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick2} />}>
+              <Collapsible open={click2} trigger={click2 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick2} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick2(); closeChallenge1(); closeChallenge2(); }} />}>
                 <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
               </Collapsible>
             </div>

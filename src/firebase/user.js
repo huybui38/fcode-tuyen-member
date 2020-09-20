@@ -9,7 +9,7 @@ export const addUser = async ({
   const userDB = database.ref(`users/${uid}`);
   const result = (await userDB.once('value')).val();
   if (!result) {
-    console.log(`${providerEmail} === ${email}`);
+    // console.log(`${providerEmail} === ${email}`);
     userDB
       .set({
         email,

@@ -57,7 +57,7 @@ const VerifyForm = (props) => {
           <tbody>
             <tr>
               <td>
-                Ho va ten
+                Họ và tên
               </td>
               <td>
                 {name}
@@ -68,7 +68,7 @@ const VerifyForm = (props) => {
           <tbody>
             <tr>
               <td>
-                So dien thoai
+                Số điện thoại
               </td>
               <td>
                 {phoneNum}
