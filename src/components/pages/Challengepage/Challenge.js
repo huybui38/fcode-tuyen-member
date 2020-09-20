@@ -41,7 +41,7 @@ function Challenge() {
                 <p>Đăng ký form</p>
                 <div className="time">
                   <span className="time-heading">Thời gian: </span>
-                  <span className="time-number">20/09 - 28/09</span>
+                  <span className="time-number">21/09 - 24/10</span>
                 </div>
                 <div className="progress-status">
                   <AiOutlineCheckCircle className="progress-status-icon" />
@@ -78,7 +78,7 @@ function Challenge() {
                 <p>Thử thách thứ nhất</p>
                 <div className="time">
                   <span className="time-heading">Thời gian: </span>
-                  <span className="time-number">29/09 - 07/10</span>
+                  <span className="time-number">01/11 - 15/11</span>
                 </div>
                 <div className="progress-status">
                   <LoadingOutlined style={{ fontSize: 20, color: 'blue' }} spin className="progress-waiting-icon" />
@@ -103,7 +103,7 @@ function Challenge() {
                 <p>Thử thách thứ hai</p>
                 <div className="time">
                   <span className="time-heading">Thời gian: </span>
-                  <span className="time-number">29/09 - 07/10</span>
+                  <span className="time-number">01/11 - 07/12</span>
                 </div>
                 <div className="progress-status">
                   <LoadingOutlined style={{ fontSize: 20, color: 'blue' }} spin className="progress-waiting-icon" />

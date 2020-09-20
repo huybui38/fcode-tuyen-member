@@ -18,7 +18,7 @@ function Pricing() {
                   <FaFire />
                 </div>
                 <h3>Tiêu chí 1</h3>
-                <p>Nhiệt huyết, cống hiến hết mình vì CLB</p>
+                <p>Nhiệt huyết, tham gia các hoạt động, cống hiến hết mình vì CLB.</p>
               </div>
             </div>
 
@@ -28,7 +28,7 @@ function Pricing() {
                   <GiBookCover />
                 </div>
                 <h3>Tiêu chí 2</h3>
-                <p>Có tinh thần học hỏi, sẵn sàng chia sẻ kiến thức với mọi người</p>
+                <p>Có tinh thần học hỏi, sẵn sàng chia sẻ kiến thức với mọi người.</p>
               </div>
             </div>
 
@@ -38,7 +38,7 @@ function Pricing() {
                   <FaHandshake />
                 </div>
                 <h3>Tiêu chí 3</h3>
-                <p>Tôn trọng các anh chị khóa trên</p>
+                <p>Giúp đỡ và tôn trọng các thành viên trong CLB.</p>
               </div>
             </div>
 
@@ -48,7 +48,7 @@ function Pricing() {
                   <BsXDiamondFill />
                 </div>
                 <h3>Tiêu chí 4</h3>
-                <p>Trách nhiệm, dám thử thách bản thân, kiên trì không dễ dàng bỏ cuộc.</p>
+                <p>Có trách nhiệm, dám thử thách bản thân, kiên trì không dễ dàng bỏ cuộc.</p>
               </div>
             </div>
 
