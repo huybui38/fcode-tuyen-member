@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable no-undef */
@@ -28,7 +29,7 @@ const LoginSection = (props) => {
         } else {
           console.log(`Step 1 => ${email}`);
           // validate email
-          if (!email.match(/^([\w]*)+\\@fpt\\.edu\\.vn$/)) {
+          if (!email.match(/^([\w]*)+\@fpt\.edu\.vn$/)) {
             return setError('Vui lòng sử dụng email FPT hoàn thành !!!');
           }
           //

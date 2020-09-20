@@ -4,8 +4,6 @@ import BrowserRouter from 'react-router-dom/BrowserRouter';
 import App from './App';
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <App />
-  </BrowserRouter>,
+  <App />,
   document.getElementById('root'),
 );

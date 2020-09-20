@@ -5,10 +5,11 @@ import {
 export const addUser = async ({
   email, name, phoneNum: phone, facebook,
 }, callback) => {
-  const { uid } = database.app.auth().currentUser;
+  const { uid, email: providerEmail } = database.app.auth().currentUser;
   const userDB = database.ref(`users/${uid}`);
   const result = (await userDB.once('value')).val();
   if (!result) {
+    console.log(`${providerEmail} === ${email}`);
     userDB
       .set({
         email,
