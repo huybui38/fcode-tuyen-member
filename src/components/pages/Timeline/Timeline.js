@@ -30,7 +30,7 @@ function Timeline() {
           <p>
             Form đăng ký đã được mở và sẽ kết thúc vào ngày chủ nhật (27/09). Bạn hãy nhấn
             {' '}
-            <Link to="/" target="_blank" className="signup-link">vào đây</Link>
+            <Link to="/signup" target="_blank" className="signup-link">vào đây</Link>
             {' '}
             để đăng ký.
           </p>

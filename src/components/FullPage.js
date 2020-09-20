@@ -15,13 +15,13 @@ const { Header, Content, Footer } = Layout;
 const FullPage = () => (
   <div>
     <Header>
-      <Navbar />
+      <Navbar className="page-navbar" />
     </Header>
 
     <Content>
 
-      <Route path="/" component={Home} />
-      <Route path="/" component={MyCarousel} />
+      <Home />
+
       <Card />
       <Challenge />
     </Content>

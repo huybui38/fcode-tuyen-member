@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Challenge.css';
 import { GiWeightLiftingUp, GiFlyingFlag } from 'react-icons/gi';
 import { AiOutlineCheckCircle, AiOutlineFileSearch } from 'react-icons/ai';
@@ -19,13 +19,19 @@ function Challenge() {
   const [click2, setClick2] = useState(false);
   const handleClick2 = () => setClick2(!click2);
 
-  return (
+  const closeChallenge1 = () => setClick(false);
+  const closeChallenge2 = () => setClick1(false);
+  const closeChallenge3 = () => setClick2(false);
 
+  console.log('click=', click);
+  console.log('click1=', click1);
+
+  return (
     <div className="challenge__section">
       <div className="challenge__wrapper">
         <h1 className="challenge__heading">Giai đoạn tuyển chọn</h1>
         <div className="challenge__container">
-          <div className={click ? 'challenge__container-card active' : 'challenge__container-card'}>
+          <div className="challenge__container-card">
             <div className="challenge__container-cardInfo">
               <div className="challenge-card-header header1">
                 <AiOutlineFileSearch className="challenge-icon" />
@@ -43,18 +49,21 @@ function Challenge() {
                 </div>
               </div>
 
-              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick} />}>
-                <p className="expanded-text">Bạn nào chưa đăng ký tham gia thì hãy ấn ngay nút "Đăng ký" bên dưới ngay nhé! </p>
-                <Link to="/signup">
-                  <Button
-                    buttonStyle="btn--primary"
-                    buttonSize="btn--mobile"
-                    buttonColor="red"
-                  >
-                    ĐĂNG KÝ
-                  </Button>
+              <Collapsible trigger={click ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick(); closeChallenge2(); closeChallenge3(); }} />}>
+                <div className={click ? 'able-info' : 'unable-info'}>
+                  <p className="expanded-text">Bạn nào chưa đăng ký tham gia thì hãy ấn ngay nút "Đăng ký" bên dưới ngay nhé! </p>
+                  <Link to="/signup">
+                    <Button
+                      buttonStyle="btn--primary"
+                      buttonSize="btn--mobile"
+                      buttonColor="red"
+                    >
+                      ĐĂNG KÝ
+                    </Button>
 
-                </Link>
+                  </Link>
+                </div>
+
               </Collapsible>
             </div>
           </div>
@@ -76,8 +85,10 @@ function Challenge() {
                   <span className="progress-status-text">Đang chờ</span>
                 </div>
               </div>
-              <Collapsible trigger={click1 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick1} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={handleClick1} />}>
-                <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
+              <Collapsible trigger={click1 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick1} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick1(); closeChallenge1(); closeChallenge3(); }} />}>
+                <div className={click1 ? 'able-info' : 'unable-info'}>
+                  <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
+                </div>
               </Collapsible>
             </div>
           </div>
