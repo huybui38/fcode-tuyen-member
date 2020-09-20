@@ -5,6 +5,10 @@
   font-family: 'PT sans', sans-serif;
 }
 
+.page-navbar {
+  position: fixed;
+  top: 0;
+}
 
 .ant-back-top {
   width: fit-content;

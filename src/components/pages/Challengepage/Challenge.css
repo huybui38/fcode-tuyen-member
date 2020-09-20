@@ -186,6 +186,15 @@
     width: 80%;
   }
 
+  .unable-info {
+    display: none;
+  }
+
+  .able-info {
+    display: contents;
+    overflow: visible;
+  }
+
   /*---------------------------------------*/
 
   /*-------------------------------------------------------*/

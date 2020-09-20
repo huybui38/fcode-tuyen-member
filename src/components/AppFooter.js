@@ -24,7 +24,7 @@ function AppFooter() {
             <Link to="//fcodehcm.wordpress.com" target="_blank" className="web-link">Website</Link>
             <div className="icons-wrapper">
               <Link to="//www.facebook.com/fcodefpt" target="_blank" className="social-icon-link fb-icon"><FaFacebook /></Link>
-              <Link to="//www.youtube.com/channel/UCZyrUXSrQ1AdkomxYz1GvCw" target="_blank" className="social-icon-link yt-icon"><FaYoutube /></Link>
+
             </div>
           </div>
         </div>
