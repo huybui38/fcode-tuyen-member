@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fcode-tuyen-member/precache-manifest.207d205df079145cdb022e4ae8c7349a.js"
+  "/fcode-tuyen-member/precache-manifest.7b0409dc35e774ee00bc793197de51f6.js"
 );
 
 self.addEventListener('message', (event) => {
