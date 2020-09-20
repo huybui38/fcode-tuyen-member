@@ -1,4 +1,9 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable prefer-promise-reject-errors */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from 'react';
+
 import {
   Form, Input, Button,
 } from 'antd';
@@ -30,13 +35,29 @@ const tailLayout = {
   },
 };
 
-const InfoForm = () => {
+const InfoForm = (props) => {
+  const {
+    gotoStep, setDataUser, data,
+  } = props;
   const onFinish = (values) => {
-    console.log('Success:', values);
+    const { name, facebook, phoneNum } = values;
+    setDataUser({
+      ...data, name, facebook, phoneNum,
+    });
+    gotoStep(3);
   };
 
   const onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
+  };
+  const validateName = (_, value) => {
+    if (!value) return Promise.reject('Vui lòng nhập tên của bạn');
+    if (value.length > 50) return Promise.reject('Tên không hợp lệ');
+    return Promise.resolve();
+  };
+  const validatePhone = (_, value) => {
+    if (!value) return Promise.reject('Vui lòng số điện thoại  của bạn');
+    if (value.length < 8 || value.length > 13) return Promise.reject('Số điện thoại phải lớn hơn 8 kí tự và nhỏ hơn 13 kí tự');
+    return Promise.resolve();
   };
 
   return (
@@ -45,6 +66,9 @@ const InfoForm = () => {
       name="basic"
       initialValues={{
         remember: true,
+        name: data ? data.name : '',
+        phoneNum: data ? data.phoneNum : '',
+        facebook: data ? data.facebook : '',
       }}
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
@@ -55,11 +79,12 @@ const InfoForm = () => {
       </div>
       <Form.Item
         label="Họ và tên"
-        name="fullname"
+        name="name"
+        // value={data ? data.name : ''}
         rules={[
           {
             required: true,
-            message: 'Hãy nhập họ tên của bạn!',
+            validator: validateName,
           },
         ]}
       >
@@ -86,11 +111,11 @@ const InfoForm = () => {
         rules={[
           {
             required: true,
-            message: 'Hãy nhập số điện thoại của bạn!',
+            validator: validatePhone,
           },
         ]}
       >
-        <Input placeholder="Số điện thoại" />
+        <Input placeholder="Số điện thoại" value={data && data.name ? data.name : ''} />
       </Form.Item>
 
       <Form.Item
@@ -101,7 +126,7 @@ const InfoForm = () => {
         {' '}
 
         <Button type="primary" htmlType="submit" className="signup-form-button">
-          Đăng ký
+          Tiếp tục
         </Button>
       </Form.Item>
     </Form>

@@ -4,7 +4,7 @@
 }
 
 .verify-text {
-    font-size: 24px;
+    font-size: 20px;
     color: #777;
     margin-bottom: 20px;
 }
@@ -15,6 +15,7 @@
     padding: 10px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    margin: 10px;
 }
 
 .verify-button {
@@ -28,3 +29,30 @@
     box-shadow: 1px 2px 5px #74b9ff;
     transform: scale(1.05);
 }
+.table-confirm{
+    display: flex;
+    font-size: 20px;
+    color: #777;
+    justify-content:center;
+    margin:10px;
+}
+.table-confirm table{
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+
+.table-confirm table td, .table-confirm table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+.table-confirm table  tr:nth-child(even){background-color: #f2f2f2;}
+.table-confirm table tr:hover {background-color: #ddd;}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
