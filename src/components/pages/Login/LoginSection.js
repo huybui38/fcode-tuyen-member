@@ -15,6 +15,7 @@ const LoginSection = (props) => {
     event.preventDefault();
     signInWithGoogle()
       .then(async (result) => {
+        setError(false);
         const { email, displayName: name } = result.user;
         const user = await checkExist();
         if (user) {
