@@ -21,7 +21,7 @@
 
 .InfiniteCarousel  img{
     height: 210px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .InfiniteCarousel  img:hover {
@@ -76,7 +76,7 @@
     cursor: pointer;
     display: inline-flex; 
     text-decoration: none;
-    font-size: 21px;
+    font-size: 24px;
 }
 
 .link-arrow {

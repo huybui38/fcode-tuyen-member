@@ -82,12 +82,12 @@ function Challenge() {
                 </div>
                 <div className="progress-status">
                   <LoadingOutlined style={{ fontSize: 20, color: 'blue' }} spin className="progress-waiting-icon" />
-                  <span className="progress-status-text">Đang chờ</span>
+                  <span className="progress-status-text">Đang đóng</span>
                 </div>
               </div>
               <Collapsible open={click1} trigger={click1 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick1} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick1(); closeChallenge1(); closeChallenge3(); }} />}>
                 <div className={click1 ? 'able-info' : 'unable-info'}>
-                  <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
+                  <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 01/11 </p>
                 </div>
               </Collapsible>
             </div>
@@ -107,11 +107,11 @@ function Challenge() {
                 </div>
                 <div className="progress-status">
                   <LoadingOutlined style={{ fontSize: 20, color: 'blue' }} spin className="progress-waiting-icon" />
-                  <span className="progress-status-text">Đang chờ</span>
+                  <span className="progress-status-text">Đang đóng</span>
                 </div>
               </div>
               <Collapsible open={click2} trigger={click2 ? <RiArrowDropUpFill className="toggle-arrow toggle-up" onClick={handleClick2} /> : <RiArrowDropDownFill className="toggle-arrow toggle-down" onClick={() => { handleClick2(); closeChallenge1(); closeChallenge2(); }} />}>
-                <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 20/09 </p>
+                <p className="expanded-text">Thử thách sẽ được bật mí vào ngày 01/11 </p>
               </Collapsible>
             </div>
           </div>
