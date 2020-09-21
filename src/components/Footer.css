@@ -21,6 +21,7 @@
 
 .footer-subscription > p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: default;
 }
 
 .footer-subscription-heading {

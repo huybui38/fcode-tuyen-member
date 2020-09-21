@@ -20,14 +20,11 @@
 }
 
 .InfiniteCarousel  img{
-    height: 210px;
+    height: 270px;
     /* border: 2px solid blue; */
 }
 
 .InfiniteCarousel  img:hover {
-   /* z-index: 1;
-   transform: scale(1.25);
-   box-shadow: 0 25px 40px rgba(0, 0, 0, .5); */
 }
 
 .photo-wrapper {
