@@ -51,7 +51,6 @@ const VerifyForm = (props) => {
               <td>
                 {email}
               </td>
-
             </tr>
           </tbody>
           <tbody>
@@ -62,7 +61,6 @@ const VerifyForm = (props) => {
               <td>
                 {name}
               </td>
-
             </tr>
           </tbody>
           <tbody>

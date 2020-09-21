@@ -3,12 +3,12 @@
 
 .timeline-wrapper {
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
-    padding-bottom: 25%;
+    padding-bottom: 20%;
 }
 
 .timeline-header {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    font-size: 78px;
+    font-size: 84px;
     font-weight: 700;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
@@ -22,8 +22,8 @@
     transition: .2s ease-in;
     display: flex;
     justify-content: center;
-    margin-top: 65px;
-    margin-bottom: 35px;
+    margin-top: 90px;
+    margin-bottom: 55px;
 }
 
 .timeline-header div:hover {
@@ -43,6 +43,7 @@
 
 .vertical-timeline-element-title {
     color: black;
+    font-weight: bolder;
     
 }
 

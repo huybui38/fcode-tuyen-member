@@ -32,3 +32,6 @@ export const checkExist = async () => {
   return result;
 };
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
+// export const signInWithGoogle = () => auth.signInWithRedirect(provider);
+// export const waitForResult = () => auth.getRedirectResult();
+// export { auth };

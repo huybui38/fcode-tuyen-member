@@ -16,7 +16,7 @@ import { firebase } from '../../../firebase/firebase';
 
 const { Step } = Steps;
 function Login() {
-  const [userData, setUserData] = useState();
+  const [userData, setUserData] = useState({});
   const [step, setStep] = useState(0);
   const [isConfirm, setIsConfirm] = useState(false);
   const [loading, setLoading] = useState(true);
