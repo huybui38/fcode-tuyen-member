@@ -37,13 +37,13 @@ function Timeline() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="03/10"
+          date="03 & 10/10"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<GiTalk />}
         >
           <div className="vertical-timeline-element-title">Offline</div>
           <p>
-            Vào ngày thứ 7 (03/10), CLB B F-Code sẽ tổ chức buổi offline đầu tiên cho các bạn K16 trong khu quân sự. Qua đó, các bạn sẽ được hiểu thêm về CLB và các thắc mắc của các bạn sẽ được giải đáp. Các bạn hãy chú ý theo dõi trên fanpage của CLB nhé.
+            Vào ngày thứ 7 (03 và 10/10), CLB B F-Code sẽ tổ chức buổi offline cho các bạn K16 trong khu quân sự. Qua đó, các bạn sẽ được hiểu thêm về CLB và các thắc mắc của các bạn sẽ được giải đáp. Các bạn hãy chú ý theo dõi trên fanpage của CLB nhé.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
