@@ -3,7 +3,7 @@ import {
 } from './firebase';
 
 export const addUser = async ({
-  email, name, phoneNum: phone, facebook,
+  email, name, phoneNum: phone, facebook, year,
 }, callback) => {
   const { uid, email: providerEmail } = database.app.auth().currentUser;
   const userDB = database.ref(`users/${uid}`);
@@ -16,6 +16,7 @@ export const addUser = async ({
         name,
         phone,
         facebook,
+        year,
       })
       .then(() => callback())
       .catch((e) => callback(`addUser${e}`));

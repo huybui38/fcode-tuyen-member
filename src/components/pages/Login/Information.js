@@ -5,16 +5,18 @@
 import React from 'react';
 
 import {
-  Form, Input, Button,
+  Form, Input, Button, Select,
 } from 'antd';
 import 'antd/lib/form/style/index.css';
 import 'antd/lib/input/style/index.css';
 import 'antd/lib/button/style/index.css';
 import 'antd/lib/radio/style/index.css';
+import 'antd/lib/select/style/index.css';
 import 'antd/lib/col/style/css';
 import 'antd/lib/row/style/css';
 import './InfoForm.css';
 
+const { Option } = Select;
 const layout = {
   labelCol: {
     span: 8,
@@ -40,9 +42,11 @@ const InfoForm = (props) => {
     gotoStep, setDataUser, data,
   } = props;
   const onFinish = (values) => {
-    const { name, facebook, phoneNum } = values;
+    const {
+      name, facebook, phoneNum, year,
+    } = values;
     setDataUser({
-      ...data, name, facebook, phoneNum,
+      ...data, name, facebook, phoneNum, year,
     });
     gotoStep(3);
   };
@@ -69,6 +73,7 @@ const InfoForm = (props) => {
         name: data ? data.name : '',
         phoneNum: data ? data.phoneNum : '',
         facebook: data ? data.facebook : '',
+        year: data ? data.year : 'K16',
       }}
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
@@ -105,6 +110,23 @@ const InfoForm = (props) => {
         <Input placeholder="Link facebook" />
       </Form.Item>
 
+      <Form.Item
+        label="Bạn là sinh viên khóa:"
+        name="year"
+        rules={[
+          {
+            required: true,
+            message: 'Vui lòng chọn mục này!!',
+          },
+        ]}
+      >
+        <Select>
+          <Select.Option value="K16">K16</Select.Option>
+          <Select.Option value="K15">K15</Select.Option>
+          <Select.Option value="K14">K14</Select.Option>
+          <Select.Option value="K13">K13</Select.Option>
+        </Select>
+      </Form.Item>
       <Form.Item
         label="Số điện thoại"
         name="phoneNum"

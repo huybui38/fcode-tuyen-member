@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import React, { Component, useState } from 'react';
 import InfiniteCarousel from 'react-leaf-carousel';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -10,8 +13,20 @@ import Picture5 from './activities-images/activity-5.jpg';
 import Picture6 from './activities-images/activity-6.jpg';
 import Picture7 from './activities-images/activity-7.jpg';
 import './MyCarousel.css';
+import OutsideHandle from './Outside';
 
 function MyCarousel() {
+  const [isShow, setIsShow] = useState(false);
+  const [targetImg, setTarget] = useState('');
+  const handleClick = (e) => {
+    setIsShow(true);
+    setTarget(e.currentTarget.src);
+    // console.log(e.currentTarget.src);
+  };
+  const onClose = () => {
+    setIsShow(false);
+    // console.log(e.currentTarget.src);
+  };
   return (
     <div className="carousel-wrapper" id="carousel-section">
       <div className="content-wrapper">
@@ -31,7 +46,7 @@ function MyCarousel() {
         <InfiniteCarousel
           breakpoints={[
             {
-              breakpoint: 500,
+              breakpoint: 576,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -40,8 +55,15 @@ function MyCarousel() {
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
               },
             },
 
@@ -60,18 +82,21 @@ function MyCarousel() {
 
           <div>
             <img
+              onClick={handleClick}
               alt=""
               src={Picture1}
             />
           </div>
           <div>
             <img
+              onClick={handleClick}
               alt=""
               src={Picture2}
             />
           </div>
           <div>
             <img
+              onClick={handleClick}
               alt=""
               src={Picture3}
             />
@@ -79,32 +104,57 @@ function MyCarousel() {
 
           <div>
             <img
+              onClick={handleClick}
               alt=""
               src={Picture4}
             />
           </div>
           <div>
             <img
+              onClick={handleClick}
               alt=""
               src={Picture5}
             />
           </div>
           <div>
             <img
+              onClick={handleClick}
               alt=""
               src={Picture6}
             />
           </div>
           <div>
             <img
+              onClick={handleClick}
               alt=""
               src={Picture7}
             />
           </div>
 
         </InfiniteCarousel>
-      </div>
 
+      </div>
+      <div id="myModal" className="modal" style={{ display: isShow ? 'block' : 'none', zIndex: 99 }}>
+        <span className="close" onClick={onClose}>&times;</span>
+        <div>
+          {isShow ? (
+            <OutsideHandle callback={onClose}>
+              <img
+                className="modal-content"
+                alt=""
+                src={targetImg}
+              />
+            </OutsideHandle>
+          ) : (
+            <img
+              className="modal-content"
+              alt=""
+              src={targetImg}
+            />
+          )}
+        </div>
+
+      </div>
     </div>
 
   );

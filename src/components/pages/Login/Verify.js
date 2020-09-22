@@ -15,7 +15,7 @@ const VerifyForm = (props) => {
   const { isConfirm, setIsConfirm } = confirm;
   if (!data) gotoStep(1);
   const {
-    email, name, phoneNum, facebook,
+    email, name, phoneNum, facebook, year,
   } = data;
   const onBack = () => {
     gotoStep(2);
@@ -70,6 +70,17 @@ const VerifyForm = (props) => {
               </td>
               <td>
                 {phoneNum}
+              </td>
+
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                Bạn là sinh viên:
+              </td>
+              <td>
+                {year}
               </td>
 
             </tr>

@@ -24,15 +24,16 @@ const LoginSection = (props) => {
             name: user.name,
             phoneNum: user.phone,
             facebook: user.facebook,
+            year: user.year,
           });
           setIsConfirm(true);
           gotoStep(3);
         } else {
-          console.log(`Step 1 => ${email}`);
+        //   console.log(`Step 1 => ${email}`);
           // validate email
-          if (!email.match(/^([\w]*)+\@fpt\.edu\.vn$/)) {
-            return setError('Vui lòng sử dụng email FPT hoàn thành !!!');
-          }
+          //   if (!email.match(/^([\w]*)+\@fpt\.edu\.vn$/)) {
+          //     return setError('Vui lòng sử dụng email FPT hoàn thành !!!');
+          //   }
           //
           setDataUser({ email, name });
           gotoStep(2);
@@ -47,7 +48,7 @@ const LoginSection = (props) => {
   return (
     <div className="login-section-wrapper">
       <div className="login-section">
-        <p>Vui lòng sử dụng mail FPT để đăng nhập</p>
+        <p>Vui lòng đăng nhập bằng email của bạn</p>
         <div className="google-login-box">
           <span className="google-logo">
             <img src={logo} alt="logo" />
